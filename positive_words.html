@@ -9,7 +9,6 @@
     <title>Pages - Admin Dashboard UI Kit - Blank Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <script src="../../../../cdn-cgi/apps/head/vAzQ3pO_LVF9Y_-CSxLP87NslSA.js"></script>
     <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
@@ -32,6 +31,21 @@
     <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+
+    <!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+
+	<!-- STYLE -->
+	<style>
+    .thai-font {
+        font-family: 'Kanit', sans-serif;
+    }
+    h3{
+        border-left: 5px gray solid;
+        padding-left: 10px;
+    }
+    </style>
+
 </head>
 
 <body class="fixed-header menu-behind">
@@ -49,7 +63,7 @@
 
             <ul class="menu-items">
                 <li class="m-t-30 ">
-                    <a href="index.html" class="detailed">
+                    <a href="login.html" class="detailed">
                         <span class="title">Dashboard</span>
                         <span class="details">12 New Updates</span>
                     </a>
@@ -73,13 +87,13 @@
                             </span>
                         </li>
                         <li class="">
-                            <a href="positive_words.html">Positive Words</a>
+                            <a href="positive_words.html">Positive Issue</a>
                             <span class="bg-success icon-thumbnail">
                                 <i class="pg-plus"></i>
                             </span>
                         </li>
                         <li class="">
-                            <a href="negative_words.html">Negative Words</a>
+                            <a href="negative_words.html">Negative Issue</a>
                             <span class="icon-thumbnail">
                                 <i class="pg-minus"></i>
                             </span>
@@ -88,7 +102,7 @@
                 </li>
                 <li class="">
                     <a href="hot_words.html">
-                        <span class="title">Hot words</span>
+                        <span class="title">Hot Issue</span>
                     </a>
                     <span class="icon-thumbnail">
                         <i class="pg-social"></i>
@@ -163,7 +177,7 @@
                         <li class="breadcrumb-item">
                             <a href="#">Home</a>
                         </li>
-                        <li class="breadcrumb-item active">Positive Words</li>
+                        <li class="breadcrumb-item active">Positive Issue</li>
                     </ol>
 
                     <!-- TARGET CONTAINER POSITIVE-->
@@ -174,14 +188,10 @@
                             <!-- DESCRIBTION -->
                             <div class=" col-lg-4 no-padding">
                                 <div class="p-r-30">
-                                    <h3>Positive Words</h3>
+                                    <h3>Positive Issue</h3>
                                     <br>
-                                    <p>Positive words are captured and clustering into a group with machine learning. Our machine
-                                        learning processes the data from text user-generated content in Facebook pages, then
-                                        grouping sentences by similarity of meaning or context, after that we rank words
-                                        found in a cluster in order to represent popular topics or issues in the set time
-                                        frame
-                                        Positive word เครื่องมือตรวจจับและจัดกลุ่ม (clustering) คำต่างๆ ที่มีความหมายในเชิงบวกหรือถูกใช้ในบริบทที่แสดงความเห็นเชิงบวก โดยใช้ machine learning ในการประมวลผลข้อความจากคอนเทนท์ใน facebook page แล้วแบ่งออกเป็นกลุ่มตามความหมายหรือบริบท จากนั้นจึงแสดงผลตามความนิยมและช่วงเวลาที่สนใจ 
+                                    <p class="thai-font">Positive Issue เครื่องมือสำหรับตรวจจับประเด็นเชิงบวกที่ลูกค้ากำลังถูกพูดถึง โดยการจับกลุ่มประเด็นหรือกลุ่มความคิดเห็นเชิงบวก (Clustering) ด้วย Machine Learning และแสดงออกมาด้วยคำสำคัญของแต่ละกลุ่มประเด็น</p>
+                                    <p class="thai-font">การรู้ถึงประเด็นเชิงบวกที่ลูกค้ากำลังสนใจในเป็นปัจจุบัน จะสามารถนำมาใช้ประโยชน์เพื่อทำการตลาดได้อย่างมีประสิทธิภาพสูงสุดได้ในเวลาที่เหมาะสม</p>
                                     </p>
                                     <br>
                                 </div>

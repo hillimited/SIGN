@@ -9,7 +9,6 @@
     <title>Pages - Admin Dashboard UI Kit - Blank Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
-    <script src="../../../../cdn-cgi/apps/head/vAzQ3pO_LVF9Y_-CSxLP87NslSA.js"></script>
     <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
@@ -32,6 +31,21 @@
     <link href="assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" media="screen">
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
+
+    <!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+
+	<!-- STYLE -->
+	<style>
+	.thai-font {
+		font-family: 'Kanit', sans-serif;
+	}
+    h3{
+        border-left: 5px gray solid;
+        padding-left: 10px;
+    }
+    </style>
+    
 </head>
 
 <body class="fixed-header menu-behind">
@@ -49,7 +63,7 @@
 
             <ul class="menu-items">
                 <li class="m-t-30 ">
-                    <a href="index.html" class="detailed">
+                    <a href="login.html" class="detailed">
                         <span class="title">Dashboard</span>
                         <span class="details">12 New Updates</span>
                     </a>
@@ -73,13 +87,13 @@
                             </span>
                         </li>
                         <li class="">
-                            <a href="positive_words.html">Positive Words</a>
+                            <a href="positive_words.html">Positive Issue</a>
                             <span class="icon-thumbnail">
                                 <i class="pg-plus"></i>
                             </span>
                         </li>
                         <li class="">
-                            <a href="negative_words.html">Negative Words</a>
+                            <a href="negative_words.html">Negative Issue</a>
                             <span class="icon-thumbnail">
                                 <i class="pg-minus"></i>
                             </span>
@@ -88,7 +102,7 @@
                 </li>
                 <li class="">
                     <a href="hot_words.html">
-                        <span class="title">Hot words</span>
+                        <span class="title">Hot Issue</span>
                     </a>
                     <span class="bg-success icon-thumbnail">
                         <i class="pg-social"></i>
@@ -164,7 +178,7 @@
                         <li class="breadcrumb-item">
                             <a href="#">Home</a>
                         </li>
-                        <li class="breadcrumb-item active">Hot Words</li>
+                        <li class="breadcrumb-item active">Hot Issue</li>
                     </ol>
 
                     <!-- TARGET CONTAINER POSITIVE-->
@@ -175,13 +189,10 @@
                             <!-- DESCRIBTION -->
                             <div class=" col-lg-4 no-padding">
                                 <div class="p-r-30">
-                                    <h3>Hot Words</h3>
+                                    <h3>Hot Issue</h3>
                                     <br>
-                                    <p>Positive words are captured and clustering into a group with machine learning. Our machine
-                                        learning processes the data from text user-generated content in Facebook pages, then
-                                        grouping sentences by similarity of meaning or context, after that we rank words
-                                        found in a cluster in order to represent popular topics or issues in the set time
-                                        frame</p>
+                                    <p class="thai-font">Hot Issue เครื่องมือสำหรับตรวจจับประเด็นที่กำลังเป็นที่สนใจจากลูกค้า โดยการจับกลุ่มประเด็นหรือกลุ่มความคิดเห็น (Clustering) ด้วย Machine Learning และแสดงออกมาด้วยคำสำคัญของแต่ละกลุ่ม</p>
+                                    <p class="thai-font">เพื่อการวางแผนกลยุทธ์ทางธุรกิจเพื่อตอบสนองและรับมือกับลูกค้า Hot Issue เป็นเครื่องมือนี้ที่บอกถึงกระแสและความสนใจของลูกค้าได้เป็นอย่างดี</p>
                                     <br>
                                 </div>
                             </div>
@@ -215,37 +226,67 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="v-align-middle semi-bold">อร่อย</td>
+                                                    <td class="v-align-middle semi-bold">พนักงาน</td>
                                                     <td>
-                                                        <a href="#" class="btn btn-tag">อร่อย</a>
-                                                        <a href="#" class="btn btn-tag">เนื้อ</a>
-                                                        <a href="#" class="btn btn-tag">หิว</a>
-                                                        <a href="#" class="btn btn-tag">อยาก</a>
-                                                        <a href="#" class="btn btn-tag">บุฟเฟ่</a>
+                                                        <a href="#" class="btn btn-tag">พนักงาน</a>
+                                                        <a href="#" class="btn btn-tag">แย่</a>
+                                                        <a href="#" class="btn btn-tag">มารยาท</a>
+                                                        <a href="#" class="btn btn-tag">ไม่สุภาพ</a>
+                                                        <a href="#" class="btn btn-tag">ทราม</a>
+                                                        <a href="#" class="btn btn-tag">ไม่ดี</a>
+                                                        <a href="#" class="btn btn-tag">เมิน</a>
+                                                        <a href="#" class="btn btn-tag">บึ้ง</a>
                                                     </td>
-                                                    <td class="center v-align-middle semi-bold"> 40%</td>
+                                                    <td class="center v-align-middle semi-bold"> 50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle semi-bold">สกปรก</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-tag">สกปรก</a>
+                                                        <a href="#" class="btn btn-tag">หนู</a>
+                                                        <a href="#" class="btn btn-tag">ไม่สะอาด</a>
+                                                        <a href="#" class="btn btn-tag">ผม</a>
+                                                        <a href="#" class="btn btn-tag">แมลงสาบ</a>
+                                                        <a href="#" class="btn btn-tag">แหยง</a>
+                                                        <a href="#" class="btn btn-tag">ท้องเสีย</a>
+                                                        <a href="#" class="btn btn-tag">แพง</a>
+                                                        <a href="#" class="btn btn-tag">น้อย</a>
+                                                        <a href="#" class="btn btn-tag">ไม่อิ่ม</a>
+                                                        <a href="#" class="btn btn-tag">ราคา</a>
+                                                    </td>
+                                                    <td class="center v-align-middle semi-bold"> 22%</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="v-align-middle semi-bold">อร่อย</td>
                                                     <td>
                                                         <a href="#" class="btn btn-tag">อร่อย</a>
                                                         <a href="#" class="btn btn-tag">เนื้อ</a>
+                                                        <a href="#" class="btn btn-tag">แซลม่อน</a>
                                                         <a href="#" class="btn btn-tag">หิว</a>
-                                                        <a href="#" class="btn btn-tag">อยาก</a>
-                                                        <a href="#" class="btn btn-tag">บุฟเฟ่</a>
+                                                        <a href="#" class="btn btn-tag">เด็ด</a>
+                                                        <a href="#" class="btn btn-tag">สด</a>
+                                                        <a href="#" class="btn btn-tag">ไม่อร่อย</a>
+                                                        <a href="#" class="btn btn-tag">เลี่ยน</a>
+                                                        <a href="#" class="btn btn-tag">คาว</a>
+                                                        <a href="#" class="btn btn-tag">หมา</a>
+                                                        <a href="#" class="btn btn-tag">ห่วย</a>
                                                     </td>
-                                                    <td class="center v-align-middle semi-bold"> 40%</td>
+                                                    <td class="center v-align-middle semi-bold"> 17%</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="v-align-middle semi-bold">อร่อย</td>
+                                                    <td class="v-align-middle semi-bold">บุฟเฟ่ต์</td>
                                                     <td>
-                                                        <a href="#" class="btn btn-tag">อร่อย</a>
-                                                        <a href="#" class="btn btn-tag">เนื้อ</a>
-                                                        <a href="#" class="btn btn-tag">หิว</a>
-                                                        <a href="#" class="btn btn-tag">อยาก</a>
+                                                        <a href="#" class="btn btn-tag">บุฟเฟต์</a>
                                                         <a href="#" class="btn btn-tag">บุฟเฟ่</a>
+                                                        <a href="#" class="btn btn-tag">เฉยๆ</a>
+                                                        <a href="#" class="btn btn-tag">คุณภาพ</a>
+                                                        <a href="#" class="btn btn-tag">คุ้ม</a>
+                                                        <a href="#" class="btn btn-tag">ลดราคา</a>
+                                                        <a href="#" class="btn btn-tag">รวมน้ำ</a>
+                                                        <a href="#" class="btn btn-tag">ไม่คุ้ม</a>
+                                                        <a href="#" class="btn btn-tag">ไม่ได้เรื่อง</a>
                                                     </td>
-                                                    <td class="center v-align-middle semi-bold"> 40%</td>
+                                                    <td class="center v-align-middle semi-bold"> 11%</td>
                                                 </tr>
                                                 
                                             </tbody>
@@ -254,45 +295,6 @@
                                 </div>
             
                             </div>
-
-                            <!-- WORDS GRAPH -->
-                            <div class="col-sm-6 m-b-10">
-                                <div class="ar-2-1">
-
-                                    <div class="widget-4 card no-border  no-margin widget-loader-bar">
-                                        <div class="container-sm-height full-height d-flex flex-column">
-                                            <div class="card-header  ">
-                                                <div class="card-title text-black hint-text">
-                                                    <span class="font-montserrat fs-11 all-caps">
-                                                        Product revenue
-                                                        <i class="fa fa-chevron-right"></i>
-                                                    </span>
-                                                </div>
-                                                <div class="card-controls">
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#" class="card-refresh text-black" data-toggle="refresh">
-                                                                <i class="card-icon card-icon-refresh"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="p-l-20 p-r-20">
-                                                <h5 class="no-margin p-b-5 pull-left hint-text">Pages</h5>
-                                                <p class="pull-right no-margin bold hint-text">2,563</p>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="widget-4-chart line-chart mt-auto" data-line-color="success" data-area-color="success-light" data-y-grid="false"
-                                                data-points="false" data-stroke-width="2">
-                                                <svg></svg>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
                             
                         </div>
 
