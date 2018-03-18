@@ -1,0 +1,23 @@
+.thai-font {
+    font-family: 'Kanit', sans-serif;
+}
+
+้h1, h2, h3, h4, p {
+    font-family: 'Kanit', sans-serif;
+}
+
+#hr-sidebar {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+#jumbotron-index {
+    background: url(../../assets/img/jumbotron_bg_2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#jumbotron-intro {
+    padding-left: 5px;
+    padding-right: 5px;
+}
