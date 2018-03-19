@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Pages - Admin Dashboard UI Kit - Blank Page</title>
+    <title>SIGNAL - Topic Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
     />
     <link rel="apple-touch-icon" href="pages/ico/60.png">
@@ -34,21 +34,11 @@
 
     <!-- CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
-
-	<!-- STYLE -->
-	<style>
-	.thai-font {
-		font-family: 'Kanit', sans-serif;
-	}
-    h3{
-        border-left: 5px gray solid;
-        padding-left: 10px;
-    }
-    </style>
+	<link rel="stylesheet" href="pages/css/my_comp_mod.css">
     
 </head>
 
-<body class="fixed-header menu-behind">
+<body class="menu-behind">
 
     <!-- SIDEBAR -->
     <nav class="page-sidebar" data-pages="sidebar">
@@ -115,210 +105,183 @@
 
     </nav>
 
+    <!-- HEADER -->
+	<div class="header ">
+		
+		<a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu" data-toggle="sidebar"></a>
+
+		<div class="brand inlin p-l-50">
+			<a href="index.html">
+				<img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" width="82" height="22">
+			</a>
+
+		</div>
+
+		<div class="d-flex align-items-center">
+
+			<div class="pull-left p-r-10 fs-14 font-heading hidden-md-down">
+				<span>Wongnai</span>
+			</div>
+			<div class="dropdown pull-right">
+				<button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="thumbnail-wrapper d32 circular inline">
+						<img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg"
+						 width="32" height="32">
+					</span>
+				</button>
+				<div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
+					<a href="#" class="dropdown-item">
+						<span>Settings</span>
+					</a>
+					<a href="#" class="dropdown-item">
+						<span>Subscription</span>
+					</a>
+					<a href="#" class="clearfix bg-master-lighter dropdown-item">
+						<span class="pull-left">Logout</span>
+						<span class="pull-right">
+							<i class="pg-power"></i>
+						</span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
     <!-- PAGE CONTAINER -->
     <div class="page-container ">
 
-        <!-- HEADER -->
-        <div class="header ">
-
-            <a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu" data-toggle="sidebar"></a>
-
-            <div class="">
-                <div class="brand inline">
-                    <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" width="82" height="22">
-                </div>
-                <a href="#" class="search-link hidden-md-down b-l p-l-30" data-toggle="search">
-                    <i class="pg-search"></i>Type anywhere to
-                    <span class="bold">search</span>
-                </a>
-            </div>
-
-            <div class="d-flex align-items-center">
-
-                <div class="pull-left p-r-10 fs-14 font-heading hidden-md-down">
-                    <span class="semi-bold">David</span>
-                    <span class="text-master">Nest</span>
-                </div>
-                <div class="dropdown pull-right hidden-md-down">
-                    <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="thumbnail-wrapper d32 circular inline">
-                            <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg"
-                                width="32" height="32">
-                        </span>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
-                        <a href="#" class="dropdown-item">
-                            <i class="pg-settings_small"></i> Settings</a>
-                        <a href="#" class="dropdown-item">
-                            <i class="pg-outdent"></i> Feedback</a>
-                        <a href="#" class="dropdown-item">
-                            <i class="pg-signals"></i> Help</a>
-                        <a href="#" class="clearfix bg-master-lighter dropdown-item">
-                            <span class="pull-left">Logout</span>
-                            <span class="pull-right">
-                                <i class="pg-power"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <a href="#" class="header-icon pg pg-alt_menu btn-link m-l-10 sm-no-margin d-inline-block" data-toggle="quickview" data-toggle-element="#quickview"></a>
-            </div>
-        </div>
-
         <!-- CONTENT -->
         <div class="page-content-wrapper ">
-
             <div class="content ">
-                
+
+                <!-- CONTENT -->
                 <div class=" container-fluid container-fixed-lg ">
 
-                    <!-- BREADCRUMB -->
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="breadcrumb-item active">Hot Issue</li>
-                    </ol>
+                    <h3>Issues Examining</h3>
+                    <br>
+                    
+                    <div>
 
-                    <!-- TARGET CONTAINER POSITIVE-->
-                    <div class="card card-transparent ">
+                    </div>
 
-                        <div class="card-block d-flex flex-wrap">
-
-                            <!-- DESCRIBTION -->
-                            <div class=" col-lg-4 no-padding">
-                                <div class="p-r-30">
-                                    <h3>Hot Issue</h3>
-                                    <br>
-                                    <p class="thai-font">Hot Issue เครื่องมือสำหรับตรวจจับประเด็นที่กำลังเป็นที่สนใจจากลูกค้า โดยการจับกลุ่มประเด็นหรือกลุ่มความคิดเห็น (Clustering) ด้วย Machine Learning และแสดงออกมาด้วยคำสำคัญของแต่ละกลุ่ม</p>
-                                    <p class="thai-font">เพื่อการวางแผนกลยุทธ์ทางธุรกิจเพื่อตอบสนองและรับมือกับลูกค้า Hot Issue เป็นเครื่องมือนี้ที่บอกถึงกระแสและความสนใจของลูกค้าได้เป็นอย่างดี</p>
-                                    <br>
-                                </div>
+                    <!-- CHART -->
+                    <div class=" col-lg-8 sm-no-padding">
+                        <div class="card card-transparent">
+                            <div class="card-block">
+                                <img class="col-lg-12 p-r-30 mr-auto" src="assets\img\Neoformix-hot-words.png">
                             </div>
-
-                            <!-- CHART -->
-                            <div class=" col-lg-8 sm-no-padding">
-                                <div class="card card-transparent">
-                                    <div class="card-block">
-                                        <img class="col-lg-12 p-r-30 mr-auto" src="assets\img\Neoformix-hot-words.png">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class=" col-lg-12 m-b-50 container-fluid container-fixed-lg bg-white">
-
-                                <div class=" card card-transparent">
-                                    <div class="card-header  d-flex justify-content-between">
-                                        <div class="card-title">Cluster ranking
-                                        </div>
-                                        <div class="export-options-container"></div>
-            
-                                    </div>
-                                    <div class="card-block">
-                                        <table class="table table-striped" id="tableWithExportOptions">
-                                            <thead>
-                                                <tr>
-                                                    <th>Clusters</th>
-                                                    <th>Words in cluster</th>
-                                                    <th>Contribution (%)</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="v-align-middle semi-bold">พนักงาน</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-tag">พนักงาน</a>
-                                                        <a href="#" class="btn btn-tag">แย่</a>
-                                                        <a href="#" class="btn btn-tag">มารยาท</a>
-                                                        <a href="#" class="btn btn-tag">ไม่สุภาพ</a>
-                                                        <a href="#" class="btn btn-tag">ทราม</a>
-                                                        <a href="#" class="btn btn-tag">ไม่ดี</a>
-                                                        <a href="#" class="btn btn-tag">เมิน</a>
-                                                        <a href="#" class="btn btn-tag">บึ้ง</a>
-                                                    </td>
-                                                    <td class="center v-align-middle semi-bold"> 50%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="v-align-middle semi-bold">สกปรก</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-tag">สกปรก</a>
-                                                        <a href="#" class="btn btn-tag">หนู</a>
-                                                        <a href="#" class="btn btn-tag">ไม่สะอาด</a>
-                                                        <a href="#" class="btn btn-tag">ผม</a>
-                                                        <a href="#" class="btn btn-tag">แมลงสาบ</a>
-                                                        <a href="#" class="btn btn-tag">แหยง</a>
-                                                        <a href="#" class="btn btn-tag">ท้องเสีย</a>
-                                                        <a href="#" class="btn btn-tag">แพง</a>
-                                                        <a href="#" class="btn btn-tag">น้อย</a>
-                                                        <a href="#" class="btn btn-tag">ไม่อิ่ม</a>
-                                                        <a href="#" class="btn btn-tag">ราคา</a>
-                                                    </td>
-                                                    <td class="center v-align-middle semi-bold"> 22%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="v-align-middle semi-bold">อร่อย</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-tag">อร่อย</a>
-                                                        <a href="#" class="btn btn-tag">เนื้อ</a>
-                                                        <a href="#" class="btn btn-tag">แซลม่อน</a>
-                                                        <a href="#" class="btn btn-tag">หิว</a>
-                                                        <a href="#" class="btn btn-tag">เด็ด</a>
-                                                        <a href="#" class="btn btn-tag">สด</a>
-                                                        <a href="#" class="btn btn-tag">ไม่อร่อย</a>
-                                                        <a href="#" class="btn btn-tag">เลี่ยน</a>
-                                                        <a href="#" class="btn btn-tag">คาว</a>
-                                                        <a href="#" class="btn btn-tag">หมา</a>
-                                                        <a href="#" class="btn btn-tag">ห่วย</a>
-                                                    </td>
-                                                    <td class="center v-align-middle semi-bold"> 17%</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="v-align-middle semi-bold">บุฟเฟ่ต์</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-tag">บุฟเฟต์</a>
-                                                        <a href="#" class="btn btn-tag">บุฟเฟ่</a>
-                                                        <a href="#" class="btn btn-tag">เฉยๆ</a>
-                                                        <a href="#" class="btn btn-tag">คุณภาพ</a>
-                                                        <a href="#" class="btn btn-tag">คุ้ม</a>
-                                                        <a href="#" class="btn btn-tag">ลดราคา</a>
-                                                        <a href="#" class="btn btn-tag">รวมน้ำ</a>
-                                                        <a href="#" class="btn btn-tag">ไม่คุ้ม</a>
-                                                        <a href="#" class="btn btn-tag">ไม่ได้เรื่อง</a>
-                                                    </td>
-                                                    <td class="center v-align-middle semi-bold"> 11%</td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-            
-                            </div>
-                            
                         </div>
+                    </div>
 
+                    <div class=" col-lg-12 m-b-50 container-fluid container-fixed-lg bg-white">
+
+                        <div class=" card card-transparent">
+                            <div class="card-header  d-flex justify-content-between">
+                                <div class="card-title">Cluster ranking
+                                </div>
+                                <div class="export-options-container"></div>
+    
+                            </div>
+                            <div class="card-block">
+                                <table class="table table-striped" id="tableWithExportOptions">
+                                    <thead>
+                                        <tr>
+                                            <th>Clusters</th>
+                                            <th>Words in cluster</th>
+                                            <th>Contribution (%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="v-align-middle semi-bold">พนักงาน</td>
+                                            <td>
+                                                <a href="#" class="btn btn-tag">พนักงาน</a>
+                                                <a href="#" class="btn btn-tag">แย่</a>
+                                                <a href="#" class="btn btn-tag">มารยาท</a>
+                                                <a href="#" class="btn btn-tag">ไม่สุภาพ</a>
+                                                <a href="#" class="btn btn-tag">ทราม</a>
+                                                <a href="#" class="btn btn-tag">ไม่ดี</a>
+                                                <a href="#" class="btn btn-tag">เมิน</a>
+                                                <a href="#" class="btn btn-tag">บึ้ง</a>
+                                            </td>
+                                            <td class="center v-align-middle semi-bold"> 50%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="v-align-middle semi-bold">สกปรก</td>
+                                            <td>
+                                                <a href="#" class="btn btn-tag">สกปรก</a>
+                                                <a href="#" class="btn btn-tag">หนู</a>
+                                                <a href="#" class="btn btn-tag">ไม่สะอาด</a>
+                                                <a href="#" class="btn btn-tag">ผม</a>
+                                                <a href="#" class="btn btn-tag">แมลงสาบ</a>
+                                                <a href="#" class="btn btn-tag">แหยง</a>
+                                                <a href="#" class="btn btn-tag">ท้องเสีย</a>
+                                                <a href="#" class="btn btn-tag">แพง</a>
+                                                <a href="#" class="btn btn-tag">น้อย</a>
+                                                <a href="#" class="btn btn-tag">ไม่อิ่ม</a>
+                                                <a href="#" class="btn btn-tag">ราคา</a>
+                                            </td>
+                                            <td class="center v-align-middle semi-bold"> 22%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="v-align-middle semi-bold">อร่อย</td>
+                                            <td>
+                                                <a href="#" class="btn btn-tag">อร่อย</a>
+                                                <a href="#" class="btn btn-tag">เนื้อ</a>
+                                                <a href="#" class="btn btn-tag">แซลม่อน</a>
+                                                <a href="#" class="btn btn-tag">หิว</a>
+                                                <a href="#" class="btn btn-tag">เด็ด</a>
+                                                <a href="#" class="btn btn-tag">สด</a>
+                                                <a href="#" class="btn btn-tag">ไม่อร่อย</a>
+                                                <a href="#" class="btn btn-tag">เลี่ยน</a>
+                                                <a href="#" class="btn btn-tag">คาว</a>
+                                                <a href="#" class="btn btn-tag">หมา</a>
+                                                <a href="#" class="btn btn-tag">ห่วย</a>
+                                            </td>
+                                            <td class="center v-align-middle semi-bold"> 17%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="v-align-middle semi-bold">บุฟเฟ่ต์</td>
+                                            <td>
+                                                <a href="#" class="btn btn-tag">บุฟเฟต์</a>
+                                                <a href="#" class="btn btn-tag">บุฟเฟ่</a>
+                                                <a href="#" class="btn btn-tag">เฉยๆ</a>
+                                                <a href="#" class="btn btn-tag">คุณภาพ</a>
+                                                <a href="#" class="btn btn-tag">คุ้ม</a>
+                                                <a href="#" class="btn btn-tag">ลดราคา</a>
+                                                <a href="#" class="btn btn-tag">รวมน้ำ</a>
+                                                <a href="#" class="btn btn-tag">ไม่คุ้ม</a>
+                                                <a href="#" class="btn btn-tag">ไม่ได้เรื่อง</a>
+                                            </td>
+                                            <td class="center v-align-middle semi-bold"> 11%</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+    
                     </div>
                     
                 </div>
+            </div>
 
-                <!-- FOOTER -->
-                <div class=" container-fluid  container-fixed-lg footer">
-                    <div class="copyright sm-text-center">
-                        <p class="small no-margin pull-left sm-pull-reset">
-                            <span class="hint-text">Copyright &copy; 2017 </span>
-                            <span class="font-montserrat">HILL</span>.
-                            <span class="hint-text">All rights reserved. </span>
-                            <span class="sm-block">
-                                <a href="#" class="m-l-10 m-r-10">Terms of use</a>
-                                <span class="muted">|</span>
-                                <a href="#" class="m-l-10">Privacy Policy</a>
-                            </span>
-                        </p>
-                        <div class="clearfix"></div>
-                    </div>
+            <!-- FOOTER -->
+            <div class=" container-fluid  container-fixed-lg footer">
+                <div class="copyright sm-text-center">
+                    <p class="small no-margin pull-left sm-pull-reset">
+                        <span class="hint-text">Copyright &copy; 2017 </span>
+                        <span class="font-montserrat">HILL</span>.
+                        <span class="hint-text">All rights reserved. </span>
+                        <span class="sm-block">
+                            <a href="#" class="m-l-10 m-r-10">Terms of use</a>
+                            <span class="muted">|</span>
+                            <a href="#" class="m-l-10">Privacy Policy</a>
+                        </span>
+                    </p>
+                    <div class="clearfix"></div>
                 </div>
-
             </div>
 
         </div>

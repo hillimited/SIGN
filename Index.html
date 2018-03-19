@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from pages.revox.io/dashboard/3.0.0/html/condensed/charts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Feb 2018 10:34:34 GMT -->
-
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<meta charset="utf-8" />
-	<title>Pages - Admin Dashboard UI Kit - Blank Page</title>
+	<title>SIGNAL</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
 	/>
 	<link rel="apple-touch-icon" href="pages/ico/60.png">
@@ -21,7 +19,7 @@
 	<meta content="" name="author" />
 	<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
 	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- I have added missing all .order-* from original bootstrap into this file -->
 	<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
 	<link href="assets/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" media="screen" />
 	<link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
@@ -46,14 +44,14 @@
 
 		<div class="sidebar-header p-l-50">
 			<a href="index.html">
-				<img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="82" height="22">
+				<img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" width="82" height="22">
 			</a>
 		</div>
 
 		<div class="sidebar-menu">
 			<ul class="menu-items">
 				<li class="m-t-30">
-					<a href="login.html">
+					<a href="#">
 						<span class="title">Dashboard</span>
 					</a>
 					<span class="icon-thumbnail">
@@ -61,26 +59,45 @@
 					</span>
 				</li>
 				<li class="">
-					<a href="sentiment.html">
-						<span class="title">Sentiment</span>
-					</a>
-					<span class="icon-thumbnail">
-						<i class="fa fa-signal"></i>
-					</span>
-				</li>
-				<li class="">
-					<a href="hot_words.html">
-						<span class="title">Hot Issue</span>
+					<a href="javascript:;">
+						<span class="title">Topic Finder</span>
+						<span class=" arrow"></span>
 					</a>
 					<span class="icon-thumbnail">
 						<i class="pg-social"></i>
 					</span>
+					<ul class="sub-menu">
+						<li class="">
+							<a href="topic-finder.html">Overview Topics</a>
+							<span class="icon-thumbnail">
+								<i class="fa fa-eye"></i>
+							</span>
+						</li>
+						<li class="">
+							<a href="topic-finder.html">Positive Topics</a>
+							<span class="icon-thumbnail">
+								<i class="fa fa-plus"></i>
+							</span>
+						</li>
+						<li class="">
+							<a href="topic-finder.html">Negative Topics</a>
+							<span class="icon-thumbnail">
+								<i class="fa fa-minus"></i>
+							</span>
+						</li>
+						<li class="">
+							<a href="topic-finder.html">Neutral Topics</a>
+							<span class="icon-thumbnail">
+								<i class="fa fa-circle"></i>
+							</span>
+						</li>
+					</ul>
 				</li>
-				<li class="">
-					<a href="#">
+				<li class="active">
+					<a href="set-time.html">
 						<span class="title">Set Time</span>
 					</a>
-					<span class="icon-thumbnail">
+					<span class="bg-success icon-thumbnail">
 						<i class="pg-clock"></i>
 					</span>
 				</li>
@@ -102,13 +119,14 @@
 		</div>
 
 	</nav>
+	
 
 	<!-- HEADER -->
 	<div class="header ">
-		
+	
 		<a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu" data-toggle="sidebar"></a>
 
-		<div class="brand inlin p-l-50">
+		<div class="brand inline">
 			<a href="index.html">
 				<img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" width="82" height="22">
 			</a>
@@ -124,7 +142,7 @@
 				<button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<span class="thumbnail-wrapper d32 circular inline">
 						<img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg"
-						 width="32" height="32">
+							width="32" height="32">
 					</span>
 				</button>
 				<div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
@@ -231,13 +249,13 @@
 						</div>
 					</div>
 
-					<!-- SECOND SERVICE -->
+					<!-- JOIN SERVICE -->
 					<div class="jumbotron m-0 bg-white">
 						<div class="inner">
 							<div class="container p-b-30 p-t-30 text-center">
-								<button class="btn btn-lg btn-rounded btn-success px-5 thai-font fs-16 m-b-10">สมัครใช้งาน SIGNAL เลย</button>
+								<a href="login.html"><button class="btn btn-lg btn-rounded btn-success px-5 thai-font fs-16 m-b-10">สมัครใช้งาน SIGNAL เลย</button></a>
 								<br>
-								<p>หรือ <a href="">ลงชื่อเข้าใช้</a></p>
+								<p>หรือ <a href="login.html">ลงชื่อเข้าใช้</a></p>
 							</div>
 						</div>
 					</div>
@@ -312,10 +330,7 @@
 			app_id: "xt5z6ibr"
 		};
 	</script>
-	<script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/xt5z6ibr'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()</script>
 
 </body>
-
-<!-- Mirrored from pages.revox.io/dashboard/3.0.0/html/condensed/charts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 28 Feb 2018 10:34:35 GMT -->
 
 </html>
