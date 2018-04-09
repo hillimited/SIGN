@@ -17,11 +17,11 @@
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta content="" name="description" />
-    <meta content="" name="author" />
+    <meta content="" name="author"/>
 
     <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css"/>
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link href="assets/plugins/bootstrap/css/bootstrap4.min.css" rel="stylesheet" type="text/css"/>
     <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
     <link href="assets/plugins/swiper/css/swiper.css" rel="stylesheet" type="text/css" media="screen"/>
 
@@ -43,11 +43,11 @@
 <body class="pace-complete">
 
     <!-- HEADER -->
-    <nav class="header" data-pages="header">
+    <nav class="header static" data-pages="header">
 
         <!-- HEADER SM XS -->
         <nav class="visible-sm visible-xs header relative">
-            <div class="container relative">
+            <div class="container relative border-bottom">
 
                 <!-- LOGO -->
                 <div class="float-left">
@@ -138,34 +138,173 @@
 
     </nav>
 
-    <!-- SET TIME -->
-    <section class="p-t-60 bg-blue">
-        <div class="container p-t-40 p-b-40 md-p-l-20 md-p-r-20 xs-no-padding">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h1 class="thai-400">Sentiment Analysis</h1>
+    <!-- TIME -->
+    <section class="p-b-60 p-t-0 sm-p-t-60">
+        <div class="container p-t-20 p-b-20 full-height">
+            <h1 class="thai">Positive Sentiment</h1>
+            <div class="row bg-white align-items-center no-margin border b-positive">
+                <div class="col-md-6 no-padding">
+                    <img class="img-fluid" src="assets/images/wordcloud.png">
                 </div>
-                <div class="col-md-6 text-right">
-                    <h5 class="inline thai">Type :</h5>
-                    <div class="cs-wrapper inline col-6">
-                        <select class="form-control bg-white cs-select thai">
-                            <option value="positive">Positive</option>
-                            <option value="negative">Negative</option>
-                            <option value="neutral">Neutral</option>
-                        </select>
+                <div class="col-md-6">
+                    <div class="card no-border full-width">
+                        <div class="card-block">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Keyword</th>
+                                        <th>Percentage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงานทำงานประจำวัน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="bg-white">
-        <div class="container p-t-40 p-b-40 md-p-l-20 md-p-r-20 xs-no-padding">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="">
+        <div class="container p-t-20 p-b-20 full-height">
+            <h1 class="thai">Negative Sentiment</h1>
+            <div class="row bg-white align-items-center no-margin border b-negative">
+                <div class="col-md-6 no-padding">
+                    <img class="img-fluid" src="assets/images/wordcloud.png">
                 </div>
                 <div class="col-md-6">
-                    
+                    <div class="card no-border full-width">
+                        <div class="card-block">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Keyword</th>
+                                        <th>Percentage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงานทำงานประจำวัน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container p-t-20 p-b-20 full-height">
+            <h1 class="thai">Neutral Sentiment</h1>
+            <div class="row bg-white align-items-center no-margin border b-neutral">
+                <div class="col-md-6 no-padding">
+                    <img class="img-fluid" src="assets/images/wordcloud.png">
+                </div>
+                <div class="col-md-6">
+                    <div class="card no-border full-width">
+                        <div class="card-block">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Keyword</th>
+                                        <th>Percentage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงานทำงานประจำวัน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>พนักงาน</td>
+                                        <td>50%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

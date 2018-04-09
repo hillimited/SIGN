@@ -16,3 +16,35 @@
     text-align: center;
     width: 50px;
 }
+
+.card .card-block {
+    padding: 13px
+}
+
+.table {
+    margin-bottom: 0px;
+    margin-top: 0px
+}
+
+.table>thead>tr {
+    width: 600px;
+}
+
+@media(max-width:991px) {
+    .sm-p-t-60 {
+        padding-top: 60px!important
+    }
+}
+
+.b-positive {
+    border-left: 3px solid #10cfbd!important;
+    border-right: 3px solid #10cfbd!important
+}
+.b-negative {
+    border-left: 3px solid #f55753!important;
+    border-right: 3px solid #f55753!important
+}
+.b-neutral {
+    border-left: 3px solid #48b0f7!important;
+    border-right: 3px solid #48b0f7!important
+}
