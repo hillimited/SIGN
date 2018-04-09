@@ -58,7 +58,7 @@
 						<i class="pg-charts"></i>
 					</span>
 				</li>
-				<li class="">
+				<li class="open active">
 					<a href="javascript:;">
 						<span class="title">Topic Finder</span>
 						<span class=" arrow"></span>
@@ -67,9 +67,9 @@
 						<i class="pg-social"></i>
 					</span>
 					<ul class="sub-menu">
-						<li class="">
+						<li class="active">
 							<a href="overall.html">Overall</a>
-							<span class="icon-thumbnail">
+							<span class="bg-success icon-thumbnail">
 								<i class="fa fa-eye"></i>
 							</span>
 						</li>
@@ -93,11 +93,11 @@
 						</li>
 					</ul>
 				</li>
-				<li class="active">
+				<li class="">
 					<a href="set-time.html">
 						<span class="title">Set Time</span>
 					</a>
-					<span class="bg-success icon-thumbnail">
+					<span class="icon-thumbnail">
 						<i class="pg-clock"></i>
 					</span>
 				</li>
@@ -122,6 +122,7 @@
 
 	<!-- HEADER -->
     <div class="header">
+        
 		<!-- HAMBERGER -->
 		<a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu p-r-30" data-toggle="sidebar"></a>
 		
@@ -172,95 +173,27 @@
 		<div class="page-content-wrapper ">
 
 			<!-- CONTENT -->
-			<div class="content pt-0 bg-white">
-				
-				<!-- MAIN JUMBOTRON -->
-				<div class="jumbotron mb-0" id="jumbotron-index">					
+			<div class="content p-t-20">
+                <div class="container">
+                    <h3 class="page-title">Topic Finder</h3>
 
-					<div class="container my-5 px-4 sm-p-b-25 sm-p-t-25 p-t-50 p-b-50">
-						<h1 class="inline thai-font bg-white px-3">ติดตามลูกค้าด้วย SIGNAL</h1>
-						<div class="row justify-content-around align-items-center">
-							<div class="col-md-5 m-t-30">
-								<p>ระบบวิเคราะห์อารมณ์และจับประเด็นความคิดเห็นของผู้ติดตามใน Social Media ด้วย <b>Machine Learning</b> มีความแม่นยำสูง ทำให้คุณเข้าใจผู้ติดตามมากขึ้น ไม่ต้องเสียเวลาอ่านทุกความคิดเห็นด้วยตัวเองอีกต่อไป ให้งานส่วนนี้เป็นหน้าที่ของเรา <b>" SIGNAL "</b></p>
-							</div>
-							<div class="col-md-5 m-t-20 p-3 border rounded" id="trial-box">
-								<h2 class="text-white mt-0">ดีหรือร้าย เราบอกคุณได้</h2>
-								<form action="">
-									<input type="text" id="input_sentence" placeholder="ใส่ประโยคที่คุณต้องการรู้" class="form-control bg-white" required>														
-									<div class="row m-2 align-items-center">
-										<button class="btn btn-success" ><p>ลองดู</p></button>
-										<span><i class="px-3 fa fa-arrow-right"></i></span>
-										<span id="good-status" class="collapse bold thai-font px-2 bg-success-light">ดี!</span>
-										<span id="bad-status" class="collapse bold thai-font px-2 bg-danger-light">ร้าย!</span>
-									</div>
-									<div>
-										<span>Select trigger (ADMIN ONLY) >>> </span>
-										<span><a data-toggle="collapse" href="#good-status">Good</a></span>
-										<span>, </span>
-										<span><a data-toggle="collapse" href="#bad-status">Bad</a></span>
-									</div>
-								</form>										
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- INTRO SERVICE WRAPPER -->
-				<div class="container">
-
-					<div class="container container-fixed-lg p-t-50 p-b-30">
-						<h3 class="text-center">บริการของเรา</h3>
-					</div>
-
-					<!-- FIRST SERVICE -->
-					<div class="jumbotron m-0 bg-white">
-						<div class="inner">
-							<div class="container p-b-30">
-								<div class="row align-items-center">
-									<div class="col-md-5 p-t-30 px-4 ">
-										<img class="full-width" src="assets/img/Neoformix-hot-words.png" alt="">
-									</div>
-									<div class="col-md-7 p-t-30">
-										<h3 class="thai-font bg-white px-1 mt-0 m-b-20" id="header-jumbotron">SENTIMENT ANALYSIS</h3>
-										<p>เครื่องมือตรวจสอบความรู้สึกผู้ติดตามแบ่งออกเป็น 3 ส่วน ได้แก่ Positive, Negative และ Neutral จากการใช้ Machine Learning และเทคนิคพิเศษ Multi-Lebel ทำให้ได้ค่าที่แม่นยำและตรงกับความเป็นจริง</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- SECOND SERVICE -->
-					<div class="jumbotron m-0 bg-white">
-						<div class="inner">
-							<div class="container m-b-30">
-								<div class="row align-items-center">
-									<div class="col-md-7 order-12 order-md-1 p-t-30">
-										<h3 class="thai-font bg-white px-1 mt-0 m-b-20" id="header-jumbotron">TOPIC FINDER</h3>
-										<p class="fs-16">ระบบวิเคราะห์อารมณ์และจับประเด็นความคิดเห็นของผู้ติดตามใน Social Media ด้วย <b>Machine Learning</b> มีความแม่นยำสูง ทำให้คุณเข้าใจผู้ติดตามมากขึ้น ไม่ต้องเสียเวลาอ่านทุกความคิดเห็นด้วยตัวเองอีกต่อไป ให้งานส่วนนี้เป็นหน้าที่ของเรา <b>" SIGNAL "</b></p>
-									</div>								
-									<div class="col-md-5 order-1 order-md-12 p-t-30 px-4 ">
-										<img class="full-width" src="assets/img/Neoformix-hot-words.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- JOIN SERVICE -->
-					<div class="jumbotron m-0 bg-white">
-						<div class="inner">
-							<div class="container p-b-30 p-t-30 text-center">
-								<a class="btn btn-rounded btn-success btn-cons btn-animated from-left fa fa-arrow-right text-white m-b-10">
-									<span><p>สมัครใช้งาน SIGNAL เลย</p></span>
-								</a>
-								<br>
-								<p>หรือ <a href="login.html">ลงชื่อเข้าใช้</a></p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
+                    <div class="row m-l-0">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-outline-success" aria-pressed="true">
+                                <input type="radio" name="options" id="option1" checked=""> Overall
+                            </label>
+                            <label class="btn btn-outline-success" aria-pressed="true">
+                                <input type="radio" name="options" id="option2"> Positive
+                            </label>
+                            <label class="btn btn-outline-success" aria-pressed="true">
+                                <input type="radio" name="options" id="option3"> Negative
+                            </label>
+                            <label class="btn btn-outline-success" aria-pressed="true">
+                                <input type="radio" name="options" id="option3"> Neutral
+                            </label>
+                        </div>
+                    </div>
+                </div>
 			</div>
 
 			<!-- FOOTER -->

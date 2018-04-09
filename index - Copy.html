@@ -34,136 +34,97 @@
 	<!-- CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 	<link rel="stylesheet" href="pages/css/my_comp_mod.css">
+	<link rel="stylesheet" href="pages/css/pages-13.css">
 
 </head>
 
 <body class="menu-behind">
 
-	<!-- SIDEBAR -->
-	<nav class="page-sidebar" data-pages="sidebar">
-
-		<div class="sidebar-header p-l-50">
-			<a href="index.html">
-				<img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" width="82" height="22">
-			</a>
-		</div>
-
-		<div class="sidebar-menu">
-			<ul class="menu-items">
-				<li class="m-t-30">
-					<a href="dashboard.html">
-						<span class="title">Dashboard</span>
-					</a>
-					<span class="icon-thumbnail">
-						<i class="pg-charts"></i>
-					</span>
-				</li>
-				<li class="">
-					<a href="javascript:;">
-						<span class="title">Topic Finder</span>
-						<span class=" arrow"></span>
-					</a>
-					<span class="icon-thumbnail">
-						<i class="pg-social"></i>
-					</span>
-					<ul class="sub-menu">
-						<li class="">
-							<a href="overall.html">Overall</a>
-							<span class="icon-thumbnail">
-								<i class="fa fa-eye"></i>
-							</span>
-						</li>
-						<li class="">
-							<a href="postitive.html">Positive</a>
-							<span class="icon-thumbnail">
-								<i class="fa fa-plus"></i>
-							</span>
-						</li>
-						<li class="">
-							<a href="negative.html">Negative</a>
-							<span class="icon-thumbnail">
-								<i class="fa fa-minus"></i>
-							</span>
-						</li>
-						<li class="">
-							<a href="neutral.html">Neutral</a>
-							<span class="icon-thumbnail">
-								<i class="fa fa-circle"></i>
-							</span>
-						</li>
-					</ul>
-				</li>
-				<li class="active">
-					<a href="set-time.html">
-						<span class="title">Set Time</span>
-					</a>
-					<span class="bg-success icon-thumbnail">
-						<i class="pg-clock"></i>
-					</span>
-				</li>
-				<li class="">
-					<hr id="hr-sidebar">
-				</li>
-				<li class="">
-					<a href="aboutus.html">
-						<span class="title">About Us</span>
-					</a>
-				</li>
-				<li class="">
-					<a href="contact.html">
-						<span class="title">Contact</span>
-					</a>
-				</li>
-			</ul>
-			<div class="clearfix"></div>
-		</div>
-
-	</nav>
-
 	<!-- HEADER -->
-    <div class="header">
-		<!-- HAMBERGER -->
-		<a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu p-r-30" data-toggle="sidebar"></a>
+    <div class="header static">
 		
-		<!-- LOGO -->
-		<div class="">
-			<div class="brand inline no-border hidden-xs-down">
-				<img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo.png"
-					width="78" height="22">
-			</div>
-		</div>
-		
-		<!-- RHS -->
-		<div class="d-flex align-items-center">
+		<nav class="header relative horizontal light sm-p-t-20">
+			<div class="container relative ">
+				<div class="menu-content" data-pages-direction="slideRight" id="header">
 
-			<div class="pull-left p-r-15 fs-14 font-heading hidden-md-down">
-				<span>Wongnai</span>
-			</div>
-			
-			<!-- AVATAR + MANU -->
-			<div class="dropdown pull-right">
-				<button class="profile-dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<span class="thumbnail-wrapper d32 circular inline">
-						<img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg"
-							width="32" height="32">
-					</span>
-				</button>
-				<div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
-					<a href="#" class="dropdown-item">Settings</a>
-					<a href="#" class="dropdown-item">Subscription</a>
-					<a href="#" class="clearfix bg-master-lighter dropdown-item">
-						<span class="pull-left">Logout</span>
-						<span class="pull-right">
-							<i class="pg-power"></i>
-						</span>
-					</a>
+					<!-- LOGO -->
+					<div class="float-left hidden-sm hidden-xs">
+						<div class="header-inner">
+							<a href="index.html"><img src="assets/images/logo_black.png" class="logo" width="90" height="22"></a>
+						</div>
+					</div>
+					
+					<!-- CLOSE -->
+					<div class="float-right">
+						<a href="#" class="text-black link padding-10 visible-xs-inline visible-sm-inline float-right m-t-10 m-b-10 m-r-10" data-pages="header-toggle"
+							data-pages-element="#header">
+							<i class=" pg-close_line"></i>
+						</a>
+					</div>
+
+					<!-- USER NAME -->
+					<!-- <div class="hidden-sm hidden-xs float-right">
+						<div class="header-inner">
+							<span class="m-l-15 bold">Wongnai</span>
+						</div>
+					</div> -->
+
+					<!-- ELEMENT -->
+					<div class="float-right sm-block sm-full-width">
+						<div class="header-inner">
+							<ul class="menu no-padding">
+								<li>
+									<a href="index.html" class="active">Home </a>
+								</li>
+								<li>
+									<a href="#">Dashboard </a>
+								</li>
+								<li class="classic">
+									<a href="javascript:;">Sentiment
+										<i class="pg-arrow_minimize m-l-5"></i>
+									</a>
+									<nav class="classic ">
+										<span class="arrow"></span>
+										<ul>
+											<li>
+												<a href="http://pages.revox.io/frontend/1.0/doc/#color" target="_blank"><i class="m-r-10 fa fa-eye"></i>Overall</a>
+											</li>
+											<li>
+												<a href="http://pages.revox.io/frontend/1.0/doc/#icons" target="_blank"><i class="m-r-10 fa fa-plus"></i>Postitive</a>
+											</li>
+											<li>
+												<a href="http://pages.revox.io/frontend/1.0/doc/#buttons" target="_blank"><i class="m-r-10 fa fa-minus"></i>Negative</a>
+											</li>
+											<li>
+												<a href="http://pages.revox.io/frontend/1.0/doc/#modals" target="_blank"><i class="m-r-10 fa fa-circle-thin"></i>Neutral</a>
+											</li>
+										</ul>
+									</nav>
+								</li>
+								<li>
+									<a href="#">Evaluate Post </a>
+								</li>
+								<li>
+									<a href="#">Stats </a>
+								</li>
+								<li>
+									<a href="#">Why SIGNAL?</a>
+								</li>
+								<li>
+									<a href="#">Sign up </a>
+								</li>
+								<li>
+									<a href="#"class="p-r-0">Login</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 			</div>
-				
-		</div>
+		</nav>
 
-
-    </div>
+	</div>
 
 	<!-- PAGE CONTAINER -->
 	<div class="page-container">
@@ -188,7 +149,9 @@
 								<form action="">
 									<input type="text" id="input_sentence" placeholder="ใส่ประโยคที่คุณต้องการรู้" class="form-control bg-white" required>														
 									<div class="row m-2 align-items-center">
-										<button class="btn btn-success" ><p>ลองดู</p></button>
+										<a data-toggle="collapse" href="#good-status">
+											<button class="btn btn-success" ><p>ลองดู</p></button>
+										</a>
 										<span><i class="px-3 fa fa-arrow-right"></i></span>
 										<span id="good-status" class="collapse bold thai-font px-2 bg-success-light">ดี!</span>
 										<span id="bad-status" class="collapse bold thai-font px-2 bg-danger-light">ร้าย!</span>
