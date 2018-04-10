@@ -43,7 +43,7 @@
 <body class="pace-complete">
 
     <!-- HEADER -->
-    <nav class="header static" data-pages="header">
+    <nav class="header" data-pages="header">
 
         <!-- HEADER SM XS -->
         <nav class="visible-sm visible-xs header relative">
@@ -145,40 +145,35 @@
     </nav>
 
     <!-- SET TIME -->
-    <section class="bg-blue p-b-60 p-t-60">
-        <div class="container p-t-40 p-b-40">
-            <div class="md-p-l-20 md-p-r-20 xs-no-padding">
-                <h1 class="thai-400">ป้อนข้อมูลเพื่อเริ่มใช้งาน</h1>
-                <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                        <p class="p-t-5 thai text-black">ก่อนเริ่มใช้งาน SIGNAL เราจำเป็นต้องทราบ Facebook Page URL และช่วงเวลาที่ท่านต้องการวิเคราะห์ผล</p>
-                    </div>
-                    <div class="col-sm-6 col-md-6 xs-p-l-20 xs-p-r-20 p-l-40 md-p-t-15">
-                        <form action="">
-                            <div class="input-group">
-                                <span class="input-group-addon form-icon">
-                                    <i class="fa fa-facebook"></i>
-                                </span>
-                                <input type="url" placeholder="Facebook Page URL" class="form-control bg-white" required>
-                            </div>
-                            <div class="input-group p-t-10">
-                                <span class="input-group-addon form-icon">
-                                    <i class="fa fa-key"></i>
-                                </span>
-                                <input type="url" placeholder="Access Token" class="form-control bg-white" required>
-                            </div>
-							<div class="input-prepend input-group p-t-10">
-                                <span class="add-on input-group-addon form-icon">
-                                    <i class="fa fa-calendar"></i>
-                                </span>
-                                <input type="text" name="reservation" id="daterangepicker" class="form-control bg-white" value="08/01/2018 1:00 PM - 08/01/2018 1:30 PM"/>
-                            </div>
-                            <button type="submit" class="btn btn-success thai m-3" data-toggle="collapse" href="#good-status">Confirm</button>
-                        </form>
-                    </div>
-
-
-
+    <section class="bg-blue p-b-60 p-t-60 full-height">
+        <div class="container p-t-60 p-b-60">
+            <h1 class="thai-400">ป้อนข้อมูลเพื่อเริ่มใช้งาน</h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-5">
+                    <p class="p-t-5 thai text-black">ก่อนเริ่มใช้งาน SIGNAL เราจำเป็นต้องทราบ Facebook Page URL และช่วงเวลาที่ท่านต้องการวิเคราะห์ผล</p>
+                </div>
+                <div class="col-sm-6 col-md-6 xs-p-l-20 xs-p-r-20 p-l-40 md-p-t-15">
+                    <form action="">
+                        <div class="input-group">
+                            <span class="input-group-addon form-icon">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                            <input type="url" placeholder="Facebook Page URL" class="form-control bg-white" required>
+                        </div>
+                        <div class="input-group p-t-10">
+                            <span class="input-group-addon form-icon">
+                                <i class="fa fa-key"></i>
+                            </span>
+                            <input type="url" placeholder="Access Token" class="form-control bg-white" required>
+                        </div>
+                        <div class="input-prepend input-group p-t-10">
+                            <span class="add-on input-group-addon form-icon">
+                                <i class="fa fa-calendar"></i>
+                            </span>
+                            <input type="text" name="reservation" id="daterangepicker" class="form-control bg-white" value="08/01/2018 1:00 PM - 08/01/2018 1:30 PM"/>
+                        </div>
+                        <button type="submit" class="btn btn-success thai m-3" data-toggle="collapse" href="#good-status">Confirm</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -194,10 +189,7 @@
     <script type="text/javascript" src="assets/plugins/velocity/velocity.ui.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-appear/jquery.appear.js"></script>
     <script type="text/javascript" src="assets/plugins/animateNumber/jquery.animateNumbers.js"></script>
-
-
     <script type="text/javascript" src="pages/js/pages.frontend.js"></script>
-
     <script type="text/javascript" src="assets/js/custom.js"></script>
 
     <!-- TIME PICKER -->
