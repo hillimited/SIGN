@@ -2565,7 +2565,7 @@ hr.dotted {
     }
 }
 
-.btn {
+/* .btn {
     font-family: open sans, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -2593,12 +2593,12 @@ hr.dotted {
     padding-right: 17px;
     position: relative;
     transition: color .1s linear 0s, background-color .1s linear 0s, opacity .2s linear 0s!important
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
     background-color: #fafafa;
     border: 1px solid rgba(98, 98, 98, .27)
-}
+} */
 
 .btn.active {
     border-color: #e6e6e6;

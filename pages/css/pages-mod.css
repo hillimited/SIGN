@@ -48,3 +48,11 @@
     border-left: 3px solid #48b0f7!important;
     border-right: 3px solid #48b0f7!important
 }
+
+.sentiment-btn {
+    text-align: center!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    padding-top: 5px;
+    padding-bottom: 5px
+}

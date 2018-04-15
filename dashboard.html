@@ -36,6 +36,11 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="assets/js/sentiment_chart.js"></script>
 
+    <!-- DATATABLE -->
+    <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen"/>
+
 </head>
 
 <body class="pace-complete bg-light">
@@ -131,42 +136,219 @@
 
     <!-- CONTENT -->
     <section class="p-t-60 p-b-60">
-        <div class="container p-t-30 p-b-30">
+        <div class="container p-t-30 p-b-30 xs-p-t-20 xs-p-b-20">
             <h1 class="thai-400">Dashboard</h1>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4 xs-m-t-30 order-2 order-sm-1">
                     <div class="bg-white full-height border">
-                        <div class="row p-t-15 m-r-20 m-l-20 align-items-center">
-                            <h5 class="col thai-400 no-margin inline text-left">Sentiment Analysis</h5>
-                            <a class="col-auto btn btn-info btn-rounded text-right thai text-white">View more</a>                            
-                        </div>
-                        <div class="full-height" id="chart_div"></div>                        
+                        <h4 class="m-l-15 thai-400 text-left">Sentiment Analysis</h4>
+                        <div style="height: 85%; min-height: 200px;" id="chart_div"></div>                        
                     </div>
                 </div>
-                <div class="col-md-6 sm-m-t-30">
+                <div class="col-md-5 xs-m-t-30 order-3 order-sm-2">
                     <div class="bg-white full-height border">
-                        <div class="row p-t-15 m-r-20 m-l-20 align-items-center">
-                            <h5 class="col thai-400 no-margin inline text-left">Top Keywords</h5>
-                            <span class="col-auto btn btn-info btn-rounded text-right thai">View more</a>                            
-                        </div>
+                        <h4 class="m-l-15 thai-400 text-left">Top Keywords (Overall)</h4>
                         <img class="img-fluid" src="assets/images/wordcloud.png" alt="">
+                        <div class="container p-b-30">
+                            <a class="full-width btn btn-outline-secondary" href="sentiment.html">View more</a>
+                            <!-- <div class="row full-width no-margin btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="col-3 btn btn-secondary sentiment-btn active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Overall
+                                </label>
+                                <label class="col-3 btn btn-secondary sentiment-btn">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> Positive
+                                </label>
+                                <label class="col-3 btn btn-secondary sentiment-btn">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> Negative
+                                </label>
+                                <label class="col-3 btn btn-secondary sentiment-btn">
+                                    <input type="radio" name="options" id="option4" autocomplete="off"> Neutral
+                                </label>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 order-1 order-sm-3">
+                    <div class="bg-white full-height border">
+                        <h4 class="m-l-15 thai-400 text-left">Stats</h4>
+                        <div class="m-t-20 container thai fs-14">
+                            <p class="thai-400">ช่วงเวลา :</p>
+                            <p class="text-center">8 ม.ค. 2018 - 20 ม.ค. 2018</p>
+                            <a class="full-width btn btn-sm btn-outline-secondary thai" href="set-time.html">
+                                เลือกช่วงเวลาใหม่
+                            </a>
+                            <hr>
+                            <p class="thai-400">จำนวน Post :</p>
+                            <p class="text-center">213 Posts</p>
+                            <hr>
+                            <p class="thai-400">จำนวน Comment :</p>
+                            <p class="text-center">3002 Comments</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row m-t-30">
-                <div class="col-md-6">
-                    <div class="bg-white full-height border">
-                        <div class="row p-t-15 m-r-20 m-l-20 align-items-center">
-                            <h5 class="col thai-400 no-margin inline text-left">Post Evaluation</h5>
-                            <a class="col-auto btn btn-info btn-rounded text-right thai text-white">View more</a>                            
-                        </div>
-                        <div class="full-height" id="chart_div"></div>
-                    </div>
-                </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
+                    <div class="bg-white border">
+                        <h4 class="m-l-15 thai-400 text-left">Post Evaluation</h4>
+                        <!-- <div class="container-fluid">
+                            <div class="card no-border full-width" style="overflow-x:auto;">
+                                <table class="table table-striped table-hover thai">
+                                    <thead>
+                                        <tr>
+                                            <th class="col">Post</th>
+                                            <th class="col">Time</th>
+                                            <th class="col">Sentiment</th>
+                                            <th class="col">
+                                                <span class="hidden-xs"># comment</span>
+                                                <span><i class="pg-comment hidden-sm hidden-md hidden-lg"></i></span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>พนักงาน</td>
+                                            <td>5 Apr 2018</td>
+                                            <td>50%</td>
+                                            <td>225</td>
+                                        </tr>
+                                        <tr>
+                                            <td>พนักงานทำงานประจำวัน</td>
+                                            <td>10 Apr 2018</td>
+                                            <td>50%</td>
+                                            <td>20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div> -->
+                        <div class="container-fluid bg-white">
+                            <div class="card no-border full-width">
+                                <div class="col-12 col-md-4">
+                                    <input type="text" id="search-table" class="form-control" placeholder="Search">
+                                </div>
+                                <div class="clearfix"></div>
+                                <div>
+                                    <div id="tableWithSearch_wrapper" class="dataTables_wrapper no-footer" style="overflow-x:auto">
+                                        <table class="table table-striped table-hover demo-table-search table-responsive-block dataTable no-footer fs-12" id="tableWithSearch" role="grid">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1">Post</th>
+                                                    <th class="sorting_asc" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" style="width: 136px;" aria-sort="descending">Datetime</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" style="width: 183px;">Sentiment</th>
+                                                    <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" style="width: 98px;"># Comment</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr role="row" class="odd">
+                                                    <td class="v-align-middle">
+                                                        <a href="#">กินแหลกแจกสนั่นลั่นซอย</a>
+                                                    </td>
+                                                    <td class="v-align-middle sorting_1">
+                                                        April 13,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        Positive
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        230
+                                                    </td>
 
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="v-align-middle">
+                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
+                                                    </td>
+                                                    <td class="v-align-middle sorting_1">
+                                                        April 13,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        Negative
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        56
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="v-align-middle">
+                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
+                                                    </td>
+                                                    <td class="v-align-middle sorting_1">
+                                                        April 13,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        Negative
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        56
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="v-align-middle">
+                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
+                                                    </td>
+                                                    <td class="v-align-middle sorting_1">
+                                                        April 13,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        Negative
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        56
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="v-align-middle">
+                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
+                                                    </td>
+                                                    <td class="v-align-middle sorting_1">
+                                                        April 13,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        Negative
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        56
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="v-align-middle">
+                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
+                                                    </td>
+                                                    <td class="v-align-middle sorting_1">
+                                                        April 13,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        Negative
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        56
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="v-align-middle">
+                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
+                                                    </td>
+                                                    <td class="v-align-middle sorting_1">
+                                                        April 13,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        Negative
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        56
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -204,6 +386,14 @@
     <script type="text/javascript" src="assets/plugins/animateNumber/jquery.animateNumbers.js"></script>
     <script type="text/javascript" src="pages/js/pages.frontend.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
+	<script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
+    <script type="text/javascript" src="assets/plugins/datatables-responsive/js/lodash.min.js"></script>
+    
+    <script src="assets/js/datatables.js" type="text/javascript"></script>
 
 </body>
 
