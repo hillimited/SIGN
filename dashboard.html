@@ -19,11 +19,11 @@
     <meta content="" name="description" />
     <meta content="" name="author" />
 
-    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/plugins/bootstrap/css/bootstrap4.min.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-    <link href="assets/plugins/swiper/css/swiper.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap/css/bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/swiper/css/swiper.css" rel="stylesheet" type="text/css" media="screen" />
 
     <link class="main-stylesheet" href="pages/css/pages.css" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="pages/css/pages-icons.css" rel="stylesheet" type="text/css" />
@@ -38,8 +38,10 @@
 
     <!-- DATATABLE -->
     <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
-	<link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen"
+    />
 
 </head>
 
@@ -55,7 +57,9 @@
                 <!-- LOGO -->
                 <div class="float-left">
                     <div class="header-inner">
-                        <a href="index.html"><img src="assets/images/logo_white.png" class="logo" width="90" height="22"></a>
+                        <a href="index.html">
+                            <img src="assets/images/logo_black.png" class="logo" width="90" height="22">
+                        </a>
                     </div>
                 </div>
 
@@ -70,17 +74,19 @@
         </nav>
 
         <!-- HEADER ELEMENT -->
-        <nav class="header relative horizontal dark-solid sm-p-t-20" data-spy="affix">
+        <nav class="header relative horizontal dark sm-p-t-20" data-spy="affix">
             <div class="container relative ">
                 <div class="menu-content" data-pages-direction="slideRight" id="header">
 
                     <!-- LOGO -->
                     <div class="float-left hidden-sm hidden-xs">
                         <div class="header-inner">
-                            <a href="index.html"><img src="assets/images/logo_white.png" class="logo" width="90" height="22"></a>
+                            <a href="index.html">
+                                <img src="assets/images/logo_white.png" class="logo" width="90" height="22">
+                            </a>
                         </div>
                     </div>
-                    
+
                     <!-- CLOSE -->
                     <div class="float-right">
                         <a href="#" class="text-black link padding-10 visible-xs-inline visible-sm-inline float-right m-t-10 m-b-10 m-r-10" data-pages="header-toggle"
@@ -89,13 +95,6 @@
                         </a>
                     </div>
 
-                    <!-- USER NAME -->
-                    <!-- <div class="hidden-sm hidden-xs float-right">
-                        <div class="header-inner">
-                            <span class="m-l-15 bold">Wongnai</span>
-                        </div>
-                    </div> -->
-
                     <!-- LINK -->
                     <div class="float-right sm-block sm-full-width">
                         <div class="header-inner">
@@ -103,27 +102,25 @@
                                 <li>
                                     <a href="index.html">Home </a>
                                 </li>
-                                <!-- <li>
+                                <li class="">
                                     <a href="dashboard.html" class="active">Dashboard </a>
                                 </li>
-                                <li>
-                                    <a href="sentiment.html">Sentiment </a>
+                                <li class="">
+                                    <a href="keywords.html">Keywords </a>
                                 </li>
-                                <li>
-                                    <a href="evaluate.html">Evaluate Post </a>
-                                </li>
-                                <li>
+                                <li class="">
                                     <a href="set-time.html">Set Time </a>
-                                </li> -->
-                                <li>
+                                </li>
+                                <!-- <li class="">
                                     <a href="register.html">Sign up </a>
                                 </li>
-                                <li>
-                                    <a href="login.html"class="p-r-0">Login</a>
-                                </li>
-                                <!-- <li>
-                                    <a href="#"class="p-r-0">Logout</a>
+                                <li class="">
+                                    <a href="login.html" class="p-r-0">Login</a>
                                 </li> -->
+                                <hr class=" hidden-md" style="width: 80%;">
+                                <li class="">
+                                    <a href="#"class="p-r-0 ">Logout</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -144,7 +141,7 @@
                 <div class="col-md-4 xs-m-t-30 order-2 order-sm-1">
                     <div class="bg-white full-height border">
                         <h4 class="m-l-15 thai-400 text-left">Sentiment Analysis</h4>
-                        <div style="height: 85%; min-height: 200px;" id="chart_div"></div>                        
+                        <div style="height: 85%; min-height: 200px;" id="chart_div"></div>
                     </div>
                 </div>
                 <div class="col-md-5 xs-m-t-30 order-3 order-sm-2">
@@ -233,117 +230,231 @@
                                 <div class="clearfix"></div>
                                 <div>
                                     <div id="tableWithSearch_wrapper" class="dataTables_wrapper no-footer" style="overflow-x:auto">
-                                        <table class="table table-striped table-hover demo-table-search table-responsive-block dataTable no-footer fs-12" id="tableWithSearch" role="grid">
+                                        <table class="table table-striped table-hover demo-table-search table-responsive-block dataTable no-footer fs-12" id="tableWithSearch"
+                                            role="grid">
                                             <thead>
                                                 <tr role="row">
-                                                    <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1">Post</th>
-                                                    <th class="sorting_asc" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" style="width: 136px;" aria-sort="descending">Datetime</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" style="width: 183px;">Sentiment</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="tableWithSearch" rowspan="1" colspan="1" style="width: 98px;"># Comment</th>
+                                                    <th>Post</th>
+                                                    <th style="width: 136px;">Datetime</th>
+                                                    <th style="width: 183px;">Sentiment</th>
+                                                    <th style="width: 98px;">Comment</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr role="row" class="odd">
+                                                <tr>
                                                     <td class="v-align-middle">
-                                                        <a href="#">กินแหลกแจกสนั่นลั่นซอย</a>
-                                                    </td>
-                                                    <td class="v-align-middle sorting_1">
-                                                        April 13,2014 10:13
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                        Positive
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                        230
-                                                    </td>
-
-                                                </tr>
-                                                <tr role="row" class="even">
-                                                    <td class="v-align-middle">
-                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
-                                                    </td>
-                                                    <td class="v-align-middle sorting_1">
-                                                        April 13,2014 10:13
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">[Sponsored] ไหนใครดูซีรี่ส์ Netflix ยกมือขึ้น 🙋🏻🙋🏻 ตอนนี้แอดติดเรื่อง
+                                                                Santa Clarita Diet หนักมาก ได้ข่าวว่าเค้ามีแคมเปญเก๋ๆ ที่ให้ทุกคนมาลองเปิดประสบการณ์ซอมบี้แบบชีล่า
+                                                                ด้วยการชิมอาหารที่เลียนแบบชิ้นส่วนมนุษย์ กับ 3 เมนูสุดพิเศษ
+                                                                ที่ Audrey Cafe & Bistro สร้างสรรค์มาอย่างดี แต่ละเมนูคือเด็ดทั้งนั้น
+                                                                คอซีรี่ย์บอกเลยว่าต้องรีบไปโดน!! เพราะเค้าขายถึงวันที่ 30
+                                                                เมษานี้เท่านั้นจ้า #SantaClaritaDiet #NetflixTh . 📍Audrey
+                                                                Cafe & Bistro สาขา Siam Center 📆วันนี้ - 30 เมษายน นี้
+                                                            </div>
+                                                        </a>
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        Negative
+                                                        April 12,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        <div class="btn btn-xs btn-success" disabled>Positive</div>
+                                                        <div class="btn btn-xs btn-danger" disabled>Negative</div>
                                                     </td>
                                                     <td class="v-align-middle">
                                                         56
                                                     </td>
                                                 </tr>
-                                                <tr role="row" class="even">
+                                                <tr>
                                                     <td class="v-align-middle">
-                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">ขอบีบให้ดูความฉ่ำ บอกเลยว่าสุดจรี๊งงง~
+                                                            </div>
+                                                        </a>
                                                     </td>
-                                                    <td class="v-align-middle sorting_1">
+                                                    <td class="v-align-middle">
                                                         April 13,2014 10:13
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        Negative
+                                                        <div class="btn btn-xs btn-success" disabled>Positive</div>
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        56
+                                                        203
                                                     </td>
                                                 </tr>
-                                                <tr role="row" class="even">
+                                                <tr>
                                                     <td class="v-align-middle">
-                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
-                                                    </td>
-                                                    <td class="v-align-middle sorting_1">
-                                                        April 13,2014 10:13
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">สงกรานต์นี้ใครไปเที่ยวจีน แล้วยังไม่มีไอเดียของฝาก มานี่เลยจ้า
+                                                                เรารวมของฝากจากจีนมาให้ บอกเลยว่ากิ้บเก๋สุดๆ สุขใจทั้งคนให้คนรับแน่นอน
+                                                                ! -------------------------- ค้นหาข้อมูลร้านอาหารจากทั่วประเทศ
+                                                                พร้อมอ่านและร่วมแบ่งปันรีวิวกันได้ที่แอป Wongnai ดาวน์โหลดฟรีที่นี่
+                                                                >>> http://bit.ly/2xHYzPh
+                                                            </div>
+                                                        </a>
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        Negative
+                                                        April 14,2014 10:13
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        56
+                                                        <div class="btn btn-xs btn-danger" disabled>Negative</div>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        0
                                                     </td>
                                                 </tr>
-                                                <tr role="row" class="even">
+                                                <tr>
                                                     <td class="v-align-middle">
-                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
-                                                    </td>
-                                                    <td class="v-align-middle sorting_1">
-                                                        April 13,2014 10:13
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">เที่ยวสุราษฯ แบบคนพื้นที่ ทั้งตกหมึก พายเรือ แวะธนาคารปู ไปจนถึงลองทำไข่เค็มไชยา!!
+                                                                น่าไปมากกกก >
+                                                                < ติดตามที่เที่ยว ทริปใหม่ๆ ได้ที่เพจ Wongnai
+                                                                    Travel เลยจ้าา ไปกดไลก์กันๆ <3 </div>
+                                                        </a>
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        Negative
+                                                        April 15,2014 10:13
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        56
+                                                        <div class="btn btn-xs btn-success" disabled>Positive</div>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        64
                                                     </td>
                                                 </tr>
-                                                <tr role="row" class="even">
+                                                <tr>
                                                     <td class="v-align-middle">
-                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
-                                                    </td>
-                                                    <td class="v-align-middle sorting_1">
-                                                        April 13,2014 10:13
-                                                    </td>
-                                                    <td class="v-align-middle">
-                                                        Negative
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">[Ad] ใครอยากออกไปนั่งชิลข้างนอก แอดแนะนำ 6 ร้านอาหารอิตาเลียน
+                                                                บรรยากาศดี๊ดีย์ ถ่ายรูปชิคๆ อวดลงโซเชี่ยลก็ปังแรง!~
+                                                            </div>
+                                                        </a>
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        56
+                                                        April 16,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        <div class="btn btn-xs btn-secondary" disabled>Neutral</div>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        0
                                                     </td>
                                                 </tr>
-                                                <tr role="row" class="even">
+                                                <tr>
                                                     <td class="v-align-middle">
-                                                        <a href="#">มา 4 จ่าย 3 อังคารนี้เท่านั้นนน</a>
-                                                    </td>
-                                                    <td class="v-align-middle sorting_1">
-                                                        April 13,2014 10:13
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">[AD] Melonpan สูตรต้นตำหรับจากญี่ปุ่นแท้ๆ กรอบนอกนุ่มใน กัดไปเจอไอศกรีมหวานฉ่ำ
+                                                                บอกเลยว่าเข้ากันกว่านี้ไม่มีแล้ว ใครยังไม่ได้ลอง จัดด่วนเลยค่า
+                                                                !
+                                                            </div>
+                                                        </a>
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        Negative
+                                                        April 16,2014 13:13
                                                     </td>
                                                     <td class="v-align-middle">
-                                                        56
+                                                        <div class="btn btn-xs btn-secondary" disabled>Neutral</div>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        3
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle">
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">รวม 10 ร้านของฝากจากเชียงใหม่ บอกเลยที่นี่ไม่ได้มีดีแค่แคปหมู
+                                                                กับไส้อั่วนะจ๊ะ มีของเด็ดอีกเพียบ จะมีอะไรบ้าง ไปดูกันเลยค่า
+                                                                ~ -------------------------- ค้นหาข้อมูลร้านอาหารจากทั่วประเทศ
+                                                                พร้อมอ่านและร่วมแบ่งปันรีวิวกันได้ที่แอป Wongnai ดาวน์โหลดฟรีที่นี่
+                                                                >>> http://bit.ly/2xHYzPh
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        April 16,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        <div class="btn btn-xs btn-success " disabled>Positive</div>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        1
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle">
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">รีวิวร้าน : ก๋วยเตี๋ยวคั่วไก่ สวนมะลิ (เจ๊เค็ง เจ๊งิ้ม) ❤️ 📍เฉลิมเขต
+                                                                4 ข.ป้อมปราบศัตรูพ่าย กรุงเทพฯ โดย คุณ Pednoii AhHa . อ่านรีวิวเต็มๆ
+                                                                ได้ที่ : http://bit.ly/2HiLCAB 🐔 ก๋วยเตี๋ยวคั่วไก่อบ : อร่อยตรงที่ความกรอบ
+                                                                ด้วยความที่การอบของร้านนี้จะมีเวลาที่นานกว่า ทำให้ตัวเส้นละลายเป็นก้อนกรอบๆเหมือนทานขนมเข่งที่เอาไปทอดเลย
+                                                                โดยร้านนี้เป็นร้านเดียวที่ทำได้ครับ (ซึ่งชอบมาก) ได้ไก่เยอะมาก
+                                                                ตัวไข่ขาวจะสุกแล้ว แต่ไข่แดงจะยังไม่สุก เหลวๆได้ที่เลยครับ
+                                                                เอามาคลุกกับตัวเส้นอร่อยและหอมมาก ส่วนน้ำจิ้ม เข้ากับตัวเส้นดีเยี่ยมครับ
+                                                                มีความหวานมาตัดกับความจืดได้พอดี 🍲 เกาเหลาน้ำไก่ปลาหมึก
+                                                                : เสิร์ฟมาในชามสีฟ้าใบใหญ่ที่ข้างในอัดแน่นด้วยเนื้อไก่ชิ้นใหญ่หมึกกรอบชิ้นโต
+                                                                จำนวนเยอะมากๆ ตัวไก่จะผ่านการทำให้สุกมาแล้ว โดยหมักพริกไทยมาก่อน
+                                                                มีความนุ่มมากหมึกกรอบยอมรับว่าอร่อยจริง น้ำซุปที่รสชาติกลมกล่อม
+                                                                มีความเผ็ดจากพริกไทยบางๆ แก้หนาว แก้กระหาย ชุ่มคอ . เมนูเด็ด:
+                                                                ก๋วยเตี๋ยวคั่วไก่, เกาเหลาไก่, ก๋วยเตี๋ยวคั่วไก่อบ --------------------------
+                                                                ค้นหาข้อมูลร้านอาหารจากทั่วประเทศ พร้อมร่วมแบ่งปันรีวิวกันได้ที่เว็บไซต์และแอปฯ
+                                                                Wongnai ดาวน์โหลดแอปฯ ฟรีที่นี่ >>> http://bit.ly/2fOz59b
+                                                                เว็บไซต์ >>> www.wongnai.com?ref=org
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        April 17,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        <div class="btn btn-xs btn-danger" disabled>Negative</div>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        8
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle">
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">[Ad] แจกสูตรฟรี! “โกโก้นมสดลาวา” สาวกโกโก้ต้องเทใจให้กับเมนูนี้
+                                                                🍫♥️ โกโก้เข้มข้นสุดใจ รวมตัวกับนมสดเย็นๆ บอกเลยว่าหน้าร้อนนี้ฟินแน่นอน
+                                                                😍
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        April 17,2014 8:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        <div class="btn btn-xs btn-secondary" disabled>Neutral</div>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        0
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="v-align-middle">
+                                                        <a href="#">
+                                                            <div class="post-text-overflow">สงกรานต์นี้ต้องจัดหนัก!! กับ 10 ร้านบุฟเฟต์โรงแรมในพัทยา บรรยากาศดี๊ดี
+                                                                มากับแฟนก็ดี มากับครอบครัวก็ได้ คุ้มแบบนี้ จัดด่วนเลยจ้า
+                                                                ! -------------------------- ค้นหาข้อมูลร้านอาหารจากทั่วประเทศ
+                                                                พร้อมอ่านและร่วมแบ่งปันรีวิวกันได้ที่แอป Wongnai ดาวน์โหลดฟรีที่นี่
+                                                                >>> http://bit.ly/2xHYzPh
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        April 18,2014 10:13
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        <div class="btn btn-xs btn-secondary" disabled>Neutral</div>
+                                                    </td>
+                                                    <td class="v-align-middle">
+                                                        0
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -351,7 +462,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- FOOTER -->
@@ -375,7 +485,7 @@
         </div>
     </section> -->
 
-<!-- JAVASCRIPT -->
+    <!-- JAVASCRIPT -->
     <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -387,12 +497,12 @@
     <script type="text/javascript" src="pages/js/pages.frontend.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
     <script src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
-	<script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
-	<script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
-	<script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
-	<script type="text/javascript" src="assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
+    <script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
     <script type="text/javascript" src="assets/plugins/datatables-responsive/js/lodash.min.js"></script>
-    
+
     <script src="assets/js/datatables.js" type="text/javascript"></script>
 
 </body>
