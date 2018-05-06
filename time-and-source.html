@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from themes.semicolonweb.com/html/canvas/form-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Apr 2018 15:39:09 GMT -->
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- MOD -->
+    <link rel="stylesheet" href="css/mod.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500,600" rel="stylesheet">
+    <!-- DATE&TIME PICKER -->
+	<link rel="stylesheet" href="demos/travel/css/datepicker.css" type="text/css" />
+	<link rel="stylesheet" href="css/components/timepicker.css" type="text/css" />
+	<link rel="stylesheet" href="css/components/daterangepicker.css" type="text/css" />
+
+    <title>Set Time & Source | SIGNAL</title>
+</head>
+
+<body class="stretched">
+
+    <div id="wrapper" class="clearfix">
+
+        <!-- HEADER -->
+        <header id="header" class="full-header">
+            <div id="header-wrap">
+                <div class="container clearfix">
+                    <div id="primary-menu-trigger">
+                        <i class="icon-reorder"></i>
+                    </div>
+        
+                    <div id="logo">
+                        <a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png">
+                            <img src="images/logo.png" alt="Canvas Logo">
+                        </a>
+                        <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png">
+                            <img src="images/logo%402x.png" alt="Canvas Logo">
+                        </a>
+                    </div>
+        
+                    <div id="top-account" class="dropdown d-none d-lg-block">
+                        <a href="#" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <i class="icon-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                            <a class="dropdown-item tleft" href="#">Setting</a>
+                            <a class="dropdown-item tleft" href="#">Account</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item tleft" href="#">Logout
+                                <i class="icon-signout"></i>
+                            </a>
+                        </ul>
+                        <!-- <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                        <a class="dropdown-item tleft" href="#">Login</a>
+                                        <a class="dropdown-item tleft" href="#">Sign Up</a>
+                                    </ul> -->
+                    </div>
+        
+                    <nav id="primary-menu">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <div>Home</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard.html">
+                                    <div>Dashboard</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="keyword.html">
+                                    <div>Keyword</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="word-trend.html">
+                                    <div>Word Trend</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="time-and-source.html">
+                                    <div>Time & Source</div>
+                                </a>
+                            </li>
+                            <li class="d-lg-none">
+                                <a href="setting.html">
+                                    <div>Setting</div>
+                                </a>
+                            </li>
+                            <li class="d-lg-none">
+                                <a href="account.html">
+                                    <div>Account</div>
+                                </a>
+                            </li>
+                            <li class="d-lg-none">
+                                <a href="logout.html">
+                                    <div>Logout</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    
+		<!-- TITLE -->
+		<section id="page-title">
+            <div class="container">
+                <h1>Time and Source</h1>
+            </div>
+        </section>
+
+        <!-- CONTENT -->
+        <section id="content">
+            <div class="content-wrap">
+                <div class="container clearfix">
+                    <div class="postcontent">
+
+                        <h3>ก่อนเริ่มใช้งาน SIGNAL ท่านจำเป็นใส่ Facebook Page URL, Access Token และช่วงเวลาที่ต้องการวิเคราะห์ผล</h3>
+                        <form class="thai-300">
+                            <div class="form-group">
+                                <h4 class="mb-2">Page URL</h4>
+                                <input type="url" class="form-control" id="facebook_page_url">
+                                <p>เช่น https://www.facebook.com/KliqueX/</p>
+                            </div>
+                            <div class="form-group">
+                                <h4 class="mb-2">Access Token</h4>
+                                <input type="url" class="form-control" id="access_token">
+                                <p>เช่น </p>
+                            </div>
+                            <div class="form-group">
+                                <h4 class="mb-2">Date and Time</h4>
+                                <input type="text" class="form-control daterange2" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="footer" class="dark">
+            <div id="copyrights">
+                <div class="container clearfix">
+                    <div class="col_half">
+                        Copyrights &copy; 2014 All Rights Reserved by Signal Inc.
+                        <br>
+                        <div class="copyright-links">
+                            <a href="#">Terms of Use</a> /
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <div class="col_half col_last tright">
+                        <div class="fright clearfix">
+                            <a href="#" class="social-icon si-small si-borderless si-facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon si-small si-borderless si-twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon si-small si-borderless si-github">
+                                <i class="icon-github"></i>
+                                <i class="icon-github"></i>
+                            </a>
+                            </a>
+                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                        <i class="icon-envelope2"></i>
+                        <a href="#" class="__cf_email__" data-cfemail="30595e565f7053515e4651431e535f5d">contact@signal.in.th</a>
+                        <span class="middot">&middot;</span>
+                        <i class="icon-headphones"></i> +66-855-612-512
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/functions.js"></script>
+
+    <!-- DATE&TIME PICKER -->
+	<script src="js/components/moment.js"></script>
+	<script src="demos/travel/js/datepicker.js"></script>
+	<script src="js/components/timepicker.js"></script>
+
+    <script src="js/components/daterangepicker.js"></script>
+	<script>
+        $(function () {
+            $('.travel-date-group .default').datepicker({
+                autoclose: true,
+                startDate: "today",
+            });
+
+            $('.travel-date-group .today').datepicker({
+                autoclose: true,
+                startDate: "today",
+                todayHighlight: true
+            });
+
+            $('.travel-date-group .past-enabled').datepicker({
+                autoclose: true,
+            });
+            $('.travel-date-group .format').datepicker({
+                autoclose: true,
+                format: "dd-mm-yyyy",
+            });
+
+            $('.travel-date-group .autoclose').datepicker();
+
+            $('.travel-date-group .disabled-week').datepicker({
+                autoclose: true,
+                daysOfWeekDisabled: "0"
+            });
+
+            $('.travel-date-group .highlighted-week').datepicker({
+                autoclose: true,
+                daysOfWeekHighlighted: "0"
+            });
+
+            $('.travel-date-group .mnth').datepicker({
+                autoclose: true,
+                minViewMode: 1,
+                format: "mm/yy"
+            });
+
+            $('.travel-date-group .multidate').datepicker({
+                multidate: true,
+                multidateSeparator: " , "
+            });
+
+            $('.travel-date-group .input-daterange').datepicker({
+                autoclose: true
+            });
+
+            $('.travel-date-group .inline-calendar').datepicker();
+
+            $('.datetimepicker').datetimepicker({
+                showClose: true
+            });
+
+            $('.datetimepicker1').datetimepicker({
+                format: 'LT',
+                showClose: true
+            });
+
+            $('.datetimepicker2').datetimepicker({
+                inline: true,
+                sideBySide: true
+            });
+
+            $('.datetimepicker3').datetimepicker();
+
+        });
+
+        $(function () {
+            // .daterange1
+            $(".daterange1").daterangepicker({
+                "buttonClasses": "button button-rounded button-mini nomargin",
+                "applyClass": "button-color",
+                "cancelClass": "button-light"
+            });
+
+            // .daterange2
+            $(".daterange2").daterangepicker({
+                "opens": "center",
+                timePicker: true,
+                timePickerIncrement: 30,
+                locale: {
+                    format: 'MM/DD/YYYY h:mm A'
+                },
+                "buttonClasses": "button button-rounded button-mini nomargin",
+                "applyClass": "button-color",
+                "cancelClass": "button-light"
+            });
+
+            // .daterange3
+            $(".daterange3").daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true
+            },
+                function (start, end, label) {
+                    var years = moment().diff(start, 'years');
+                    alert("You are " + years + " years old.");
+                });
+
+            // reportrange
+            function cb(start, end) {
+                $(".reportrange span").html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+            }
+            cb(moment().subtract(29, 'days'), moment());
+
+            $(".reportrange").daterangepicker({
+                "buttonClasses": "button button-rounded button-mini nomargin",
+                "applyClass": "button-color",
+                "cancelClass": "button-light",
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            }, cb);
+
+            // .daterange4
+            $(".daterange4").daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: 'Clear'
+                },
+                "buttonClasses": "button button-rounded button-mini nomargin",
+                "applyClass": "button-color",
+                "cancelClass": "button-light"
+            });
+
+            $(".daterange4").on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+            });
+
+            $(".daterange4").on('cancel.daterangepicker', function (ev, picker) {
+                $(this).val('');
+            });
+
+        });
+
+    </script>
+</body>
+
+<!-- Mirrored from themes.semicolonweb.com/html/canvas/form-elements.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Apr 2018 15:39:09 GMT -->
+
+</html>

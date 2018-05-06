@@ -1,0 +1,95 @@
+.thai {
+    font-family: 'Kanit', sans-serif;
+}
+.thai-200 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200!important
+}
+.thai-300 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300!important
+}
+.thai-400 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400!important
+}
+.thai-500 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500!important
+}
+.thai-600 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600!important
+}
+.fs-16 {
+    font-size: 16px!important
+}
+.fs-18 {
+    font-size: 18px!important
+}
+.fs-20 {
+    font-size: 20px!important
+}
+.fs-22 {
+    font-size: 22px!important
+}
+h2,h3,h4,h5,p {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400
+}
+p {
+    font-size: 16px
+}
+
+
+/* index */
+.slider-caption h2 {
+    font-weight: 400
+}
+.flex-caption, .slider-caption {
+    font-weight: 200
+}
+
+/* dashboard */
+.post-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+td {
+    vertical-align: middle!important;
+    text-align: left;
+    font-size: small
+}
+.pricing-box.pricing-extended .pricing-features ul {
+    padding-top: 0
+}
+.pricing-box.pricing-extended .pricing-features li {
+    width: inherit
+}
+.dataTables_info {
+    text-align: left!important
+}
+
+/* Set-time */
+form p {
+    font-weight: 300
+}
+.pricing-box.pricing-extended {
+    height: 100%;
+}
+.pricing-desc {
+    height: 100%;
+    width: 100%
+}
+
+/* login - register */
+.card-body label {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: 300
+}
+
+/* keyword */
