@@ -24,7 +24,7 @@ $(document).ready(function () {
 });
 
 $.extend( $.fn.dataTable.defaults, {
-    "scrollY": "250px",
+    "scrollY": "350px",
     "scrollCollapse": true,
     "paging": false,
 

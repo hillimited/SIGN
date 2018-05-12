@@ -106,8 +106,6 @@ p {
 }
 td {
     vertical-align: middle!important;
-    text-align: left;
-    font-size: small
 }
 .pricing-box.pricing-extended .pricing-features ul {
     padding-top: 0;
@@ -129,7 +127,8 @@ table.table-bordered.dataTable td {
     text-align: center
 }
 table.table-bordered.dataTable td:first-child {
-    text-align: left
+    text-align: left;
+    font-size: small
 }
 tbody span.badge {
     text-transform: capitalize;
@@ -162,6 +161,18 @@ tbody span.badge[sentiment=both] {
     .flex-h-colchart, .flex-h-wordcould {
         height: 100%
     }
+}
+li.ui-state-active a.tab-all {
+    background-color: #9B59B6!important
+}
+li.ui-state-active a.tab-pos {
+    background-color: #10cfbd!important
+}
+li.ui-state-active a.tab-neg {
+    background-color: #f55753!important
+}
+li.ui-state-active a.tab-neu {
+    background-color: #b1b1b1!important
 }
 
 /* Set-time */
