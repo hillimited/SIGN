@@ -150,6 +150,19 @@ tbody span.badge[sentiment=both] {
 .breadcrumb a, .breadcrumb-item.active, .breadcrumb-item + .breadcrumb-item::before {
     color: whitesmoke
 }
+.flex-h-colchart, .flex-h-wordcould {
+    width: 100%
+}
+@media (max-width: 768px) {
+    .flex-h-colchart {
+        height: 250px
+    }
+}
+@media (min-width: 768px) {
+    .flex-h-colchart, .flex-h-wordcould {
+        height: 100%
+    }
+}
 
 /* Set-time */
 form p {
