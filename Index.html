@@ -27,7 +27,7 @@
 
 <body class="stretched">
 
-    <div id="wrapper" class="clearfix">
+    <div class="clearfix">
 
         <!-- HEADER -->
 		<header id="header" class="full-header">
@@ -38,27 +38,10 @@
 					</div>
 
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png">
-							<img src="images/logo.png" alt="Canvas Logo">
-						</a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png">
-							<img src="images/logo%402x.png" alt="Canvas Logo">
+						<a href="index.html" class="standard-logo">
+							<img src="images/logo.png" alt="Signal Logo">
 						</a>
                     </div>
-                    
-					<div id="top-account" class="dropdown d-none d-lg-block">
-						<a href="#" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							<i class="icon-user"></i>
-						</a>
-						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-							<a class="dropdown-item tleft" href="#">Setting</a>
-							<a class="dropdown-item tleft" href="#">Account</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item tleft" href="#">Logout
-								<i class="icon-signout"></i>
-							</a>
-						</ul>
-					</div>
 
 					<nav id="primary-menu">
 						<ul>
@@ -67,39 +50,24 @@
 									<div>Home</div>
 								</a>
 							</li>
-							<li>
+							<!-- <li>
 								<a href="dashboard.html">
 									<div>Dashboard</div>
 								</a>
 							</li>
 							<li>
 								<a href="keyword.html">
-									<div>Keyword</div>
+									<div>Keywords</div>
 								</a>
 							</li>
 							<li>
 								<a href="word-trend.html">
 									<div>Word Trend</div>
 								</a>
-							</li>
-							<li>
-								<a href="set-time.html">
-									<div>Set Time</div>
-								</a>
-                            </li>
-                            <li class="d-lg-none">
-                                <a href="setting.html">
-                                    <div>Setting</div>
-                                </a>
-                            </li>
-                            <li class="d-lg-none">
-                                <a href="account.html">
-                                    <div>Account</div>
-                                </a>
-                            </li>
-                            <li class="d-lg-none">
-                                <a href="logout.html">
-                                    <div>Logout</div>
+							</li> -->
+                            <li>
+                                <a href="login-register.html">
+                                    <div>Login/Register</div>
                                 </a>
                             </li>
 						</ul>
@@ -110,15 +78,15 @@
 
         <!-- SLIDER -->
         <section id="slider" class="slider-element slider-parallax swiper_wrapper clearfix">
-            <div class="slider-parallax-inner">
+            <div class="slider-parallax-inner h-100">
                 <div class="swiper-container swiper-parent">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide" style="background-image: url('images/slider/swiper/3.jpg'); background-position: center top;">
+                        <div class="swiper-slide" style="background-image: url('images/slider/swiper/3.jpg'); background-position: center top; height: 100%; width: auto;">
                             <div class="container clearfix">
-                                <div class="slider-caption">
+                                <div class="slider-caption slider-caption-center">
                                     <h2 class="thai" data-caption-animate="fadeInUp">SIGNAL</h2>
-                                    <p class="d-none d-sm-block thai" data-caption-animate="fadeInUp" data-caption-delay="200">สุดยอดเครื่องมือทางการตลาดด้าน Social Media </p>
+                                    <p class="thai" data-caption-animate="fadeInUp" data-caption-delay="200">สุดยอดเครื่องมือทางการตลาดด้าน Social Media </p>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +95,7 @@
                             <div class="container clearfix">
                                 <div class="slider-caption slider-caption-center">
                                     <h2 class="thai" data-caption-animate="fadeInUp">ติดตามลูกค้าด้วย Signal</h2>
-                                    <p class="d-none d-sm-block thai" data-caption-animate="fadeInUp" data-caption-delay="200">เข้าใจลูกค้าได้มากกว่าที่เคย ติดตามลูกค้าของคุณผ่าน Social Media</p>
+                                    <p class="thai" data-caption-animate="fadeInUp" data-caption-delay="200">เข้าใจลูกค้าได้มากกว่าที่เคย ติดตามลูกค้าของคุณผ่าน Social Media</p>
                                 </div>
                             </div>
                             <div class="video-overlay" style="background-color: rgba(0,0,0,0.5);"></div>
@@ -137,7 +105,7 @@
                             <div class="container clearfix">
                                 <div class="slider-caption slider-caption-center">
                                     <h2 class="thai" data-caption-animate="fadeInUp">วัดผลการตลาดทาง<br>Social Media</h2>
-                                    <p class="d-none d-sm-block thai" data-caption-animate="fadeInUp" data-caption-delay="200">ประเมินผลงานทางการตลาดแบบจับต้องได้ด้วยการประเมินความรู้สึกของลูกค้าต่อสินค้า/บริการของเรา</p>
+                                    <p class="thai" data-caption-animate="fadeInUp" data-caption-delay="200">ประเมินผลงานทางการตลาดแบบจับต้องได้ด้วยการประเมินความรู้สึกของลูกค้าต่อสินค้า/บริการของเรา</p>
                                 </div>
                             </div>
                             <div class="video-wrap">
@@ -167,34 +135,35 @@
         </section>
 
         <!-- CONTENT -->
-        <section id="content">
+        <section id="content" class="bg-white">
             <div class="content-wrap">
 
-                <!-- SLIDERE -->
-                <div class="promo promo-light promo-full bottommargin-lg header-stick notopborder">
-                    <div class="container clearfix">
-                        <h2 class="thai-400"><span>ดีหรือร้าย</span> เราบอกคุณได้</h2>
+                <!-- TRAILER -->
+                <div class="section parallax dark notopmargin noborder header-stick" style="padding: 80px 0; background-image: url('images/xx/trailer-bg2.jpg'); background-position: center top;"
+                    data-bottom-top="background-position:0px 200px;" data-top-bottom="background-position:0px -200px;">
+                    <div class="container center clearfix">
+                        <h1 class="thai-400">ดีหรือร้าย เราบอกคุณได้</h1>
                         <div class="row noleftmargin norightmargin">
                             <div class="col-md-6 mb-3 mb-md-0 px-0 pr-md-3">
-                                <span class="thai-300 fs-18">SIGNAL สามารถวิเคราะห์ความรู้สึกจากข้อความภาษาไทยแล้วบอกได้ว่าข้อความนั้นเป็นทางบวกหรือลบได้ด้วย Machine Learning</span>
+                                <span class="thai-300 fs-18">SIGNAL สามารถวิเคราะห์ความรู้สึกจากข้อความภาษาไทย แล้วบอกได้ว่าข้อความนั้นเป็นทางบวกหรือลบได้ด้วย Machine Learning</span>
                             </div>
                             <div class="col-md-6 px-0 px-md-3">
-                                <input class="form-control mb-2" type="text" placeholder="พิมพ์ที่นี่">
+                                <input class="form-control mb-2 bg-white black" style="color: black" type="text" placeholder="พิมพ์ที่นี่">
                                 <div class="row m-3 align-items-center">
-                                    <button data-toggle="collapse" href="#collapseOne" class="btn btn-outline-dark thai-300">ดูผลลัพธ์</button>
+                                    <button data-toggle="collapse" href="#collapseOne" class="btn btn-secondary thai-300">ดูผลลัพธ์</button>
                                     <i class="icon-caret-right mx-3"></i>
-                                    <span id="collapseOne" class="collapse btn btn-success disabled">Positive</span>
-                                    <span id="collapseOne" class="collapse btn btn-warning disabled">Negative</span>
+                                    <span id="collapseOne" class="collapse p-1 px-2 bg-success fs-20">Positive</span>
+                                    <span id="collapseOne" class="collapse btn btn-warning">Negative</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- FEATURE ICON -->
-                <div class="container clearfix">
+                <!-- FEATURE -->
+                <div class="container clearfix py-5">
                     <div class="heading-block center">
-                        <h1>บริการของเรา</h1>
+                        <h1 class="thai-400">บริการของเรา</h1>
                     </div>
                     <div class="row mx-0 mb-5">
                         <div class="col-md-5 mb-5 mb-md-0 order-md-2">
@@ -215,7 +184,7 @@
                             <div class="heading-block">
                                 <h2 class="thai-400">Top <span>Keywords</span></h2>   
                             </div>
-                            <p class="thai-300 fs-18">ตรวจสอบ Keyword ที่มีความถี่สูง เพื่อจับประเด็นความสนใจของลูกค้าได้อย่างสะดวกรวดเร็ว</p>
+                            <p class="thai-300 fs-18">เครื่องมือตรวจสอบคำที่ถูกพูดถึงบ่อย ใช้ในการจับประเด็นความสนใจของลูกค้าได้อย่างง่ายดาย สามารถช่วยลดระยะเวลาในการตรวจสอบเพจด้วยตาเปล่าอย่างมีประสิทธิภาพ</p>
                         </div>
                     </div>
                     <div class="row mx-0 mb-5">
@@ -226,14 +195,24 @@
                             <div class="heading-block">
                                 <h2 class="thai-400"><span>Post</span> Evaluation</h2>  
                             </div>
-                            <p class="thai-300 fs-18">ติดตามกระแสตอบรับของแต่ละ Content สามารถใช้ประเมิน Marketing Campaign Performance ได้อย่างเป็นรูปธรรม และสามารถจับประเด็นความสนใจของลูกค้าได้อย่างง่ายดาย</p>
+                            <p class="thai-300 fs-18">เครื่องมือติดตามผลลัพธ์รายโพสท์ สามารถจับประเด็นความสนใจและตรวจสอบความรู้สึกลูกค้าได้อย่างง่ายดาย สามารถนำไปใช้ประเมินประสิทธิภาพ Marketing Campaign ได้อย่างเป็นรูปธรรม</p>
                         </div>
                     </div>
-
+                    <div class="row mx-0 mb-5">
+                        <div class="col-md-5 mb-5 mb-md-0">
+                            <img src="images/xx/wordcloud.png" alt="Image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="heading-block">
+                                <h2 class="thai-400">Word <span>Trend</span></h2>   
+                            </div>
+                            <p class="thai-300 fs-18">ติดตามแนวโน้มความถี่ของคำที่ต้องการดูตามช่วงเวลา ใช้ในการตรวจดูระดับความสนใจที่มากขึ้นหรือลดลงของลูกค้าได้ต่อประเด็นใด ๆ ได้</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- BIG LINK -->
-                <a href="#" class="button button-full center tright footer-stick">
+                <a href="login-register.html" class="button button-full center tright footer-stick">
                     <div class="container clearfix thai">
                         SIGNAL ตัวช่วยการตลาดยุคใหม่สำหรับคุณ
                         <strong>เริ่มต้นใช้งาน</strong>
@@ -248,38 +227,18 @@
             <div id="copyrights">
                 <div class="container clearfix">
                     <div class="col_half">
-                        Copyrights &copy; 2014 All Rights Reserved by Signal Inc.
+                        <span>SIGNAL is a part in the Social Intention Analytics project presented by SP43</span>
                         <br>
                         <div class="copyright-links">
-                            <a href="#">Terms of Use</a> /
-                            <a href="#">Privacy Policy</a>
+                            <a href="https://www.eng.chula.ac.th/th/pr/seniorprojectxd/">Senior Project XD</a>
                         </div>
                     </div>
                     <div class="col_half col_last tright">
-                        <div class="fright clearfix">
-                            <a href="#" class="social-icon si-small si-borderless si-facebook">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-twitter">
-                                <i class="icon-twitter"></i>
-                                <i class="icon-twitter"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-github">
-                                <i class="icon-github"></i>
-                                <i class="icon-github"></i>
-                            </a>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
-                                <i class="icon-linkedin"></i>
-                                <i class="icon-linkedin"></i>
-                            </a>
-                        </div>
-                        <div class="clear"></div>
-                        <i class="icon-envelope2"></i>
-                        <a href="#" class="__cf_email__" data-cfemail="30595e565f7053515e4651431e535f5d">contact@signal.in.th</a>
-                        <span class="middot">&middot;</span>
-                        <i class="icon-headphones"></i> +66-855-612-512
+                        <span>Jirut P. (CE)</span> as Backend developer and System developer
+                        <br>
+                        <span>Varitthorn S. (CE)</span> as System developer
+                        <br>
+                        <span>Chitsanupong J. (IE)</span> as Frontend developer
                     </div>
                 </div>
             </div>
@@ -288,10 +247,8 @@
 
     <div id="gotoTop" class="icon-angle-up"></div>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
-
     <script src="js/functions.js"></script>
 </body>
 

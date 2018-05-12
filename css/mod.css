@@ -43,6 +43,24 @@ h2,h3,h4,h5,p {
 p {
     font-size: 16px
 }
+#content {
+    background-color: #f8f9fa
+}
+#page-title {
+    background-color: rgb(48, 48, 48)
+}
+#page-title h1 {
+    color: white
+}
+#header.full-header #primary-menu > ul {
+    float: left;
+    padding-right: 15px;
+    margin-right: 0;
+    border-right: none
+}
+#copyrights span{
+    color: white
+}
 
 
 /* index */
@@ -51,6 +69,31 @@ p {
 }
 .flex-caption, .slider-caption {
     font-weight: 200
+}
+@media (max-width: 991px) {
+    .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid),
+    .swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide {
+      height: 500px !important;
+    }
+}
+.swiper_wrapper {
+    width: auto;
+    height: 550px;
+}
+.slider-arrow-right, .slider-arrow-left {
+    top: 50%
+}
+.bg-pos {
+    background-color: #10cfbd
+}
+.bg-neg {
+    background-color: #f55753
+}
+.bg-neu {
+    background-color: #dadada
+}
+.bg-all {
+    background-color: #9B59B6
 }
 
 /* dashboard */
@@ -75,6 +118,20 @@ td {
 .dataTables_info {
     text-align: left!important
 }
+.badge {
+    font-size: 14px;
+}
+label .form-control.form-control-sm {
+    display: inline;
+    width: 50%
+}
+label {
+    width: 100%;
+    text-align: right
+}
+ul.pagination {
+    text-align: right
+}
 
 /* Set-time */
 form p {
@@ -86,6 +143,9 @@ form p {
 .pricing-desc {
     height: 100%;
     width: 100%
+}
+.input-group-text i {
+    width: 30px
 }
 
 /* login - register */
