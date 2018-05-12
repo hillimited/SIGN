@@ -189,6 +189,12 @@ form p {
 .input-group-text i {
     width: 30px
 }
+th.next i:before{
+    content: ">>";
+}
+th.prev i:before{
+    content: "<<";
+}
 
 /* login - register */
 .card-body label {
