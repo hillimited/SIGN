@@ -110,13 +110,13 @@ td {
     font-size: small
 }
 .pricing-box.pricing-extended .pricing-features ul {
-    padding-top: 0
+    padding-top: 0;
 }
 .pricing-box.pricing-extended .pricing-features li {
     width: inherit
 }
 .dataTables_info {
-    text-align: left!important
+    text-align: left!important;
 }
 .badge {
     font-size: 14px;
@@ -125,12 +125,30 @@ label .form-control.form-control-sm {
     display: inline;
     width: 50%
 }
-label {
-    width: 100%;
-    text-align: right
+table.table-bordered.dataTable td {
+    text-align: center
 }
-ul.pagination {
-    text-align: right
+table.table-bordered.dataTable td:first-child {
+    text-align: left
+}
+tbody span.badge {
+    text-transform: capitalize;
+    color: white
+}
+tbody span.badge[sentiment=positive] {
+    background-color:  #10cfbd;
+}
+tbody span.badge[sentiment=negative] {
+    background-color:  #f55753;
+}
+tbody span.badge[sentiment=neutral] {
+    background-color:  #b1b1b1;
+}
+tbody span.badge[sentiment=both] {
+    background-color: orange;
+}
+.breadcrumb a, .breadcrumb-item.active, .breadcrumb-item + .breadcrumb-item::before {
+    color: whitesmoke
 }
 
 /* Set-time */
